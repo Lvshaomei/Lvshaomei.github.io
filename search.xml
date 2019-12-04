@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>HTML----浮动(高度塌陷)</title>
+    <url>/2019/11/18/HTML----%E6%B5%AE%E5%8A%A8(%E9%AB%98%E5%BA%A6%E5%A1%8C%E9%99%B7)/</url>
+    <content><![CDATA[<h3 id="定义"><span class="heading-link">定义</span></h3><p> 浮动:通常无法左右排列，则设置了浮动的元素会往左或者右移动，直到遇到另一个元素或者外边距</p>
+<figure class="highlight plain"><div class="table-container"><table><tr><td class="code"><pre><span class="line">float:left/right;</span><br></pre></td></tr></table></div></figure>
+<h6 id="高度塌陷问题"><span class="heading-link">高度塌陷问题</span></h6><p>子元素书写浮动属性后，父元素会产生高度塌陷的问题，也就是福原属高度为0的现象。</p>
+<h6 id="解决方法"><span class="heading-link">解决方法</span></h6><p>1、直接书写父元素高度—–必须是模块高度不会改变的情况下（不提倡）<br>2、给父元素书写溢出隐藏属性:（经常）</p>
+<figure class="highlight plain"><div class="table-container"><table><tr><td class="code"><pre><span class="line">overflow: hidden</span><br></pre></td></tr></table></div></figure>
+<p>3、在最后一个书写浮动属性的子元素下写个空的div标签，然后给他添加一个行内样式 <strong>clear: both</strong></p>
+<figure class="highlight plain"><div class="table-container"><table><tr><td class="code"><pre><span class="line">&lt;div style = &quot;clear:both&quot; &gt; &lt;/div&gt;</span><br></pre></td></tr></table></div></figure>
+<p>4、（在第二种无法解决问题情况下）<br>eg:在body中书写</p>
+<figure class="highlight plain"><div class="table-container"><table><tr><td class="code"><pre><span class="line">&lt;ul class =&quot;clearfix&quot;&gt;</span><br></pre></td></tr></table></div></figure>
+<p>在css中设置：</p>
+<figure class="highlight plain"><div class="table-container"><table><tr><td class="code"><pre><span class="line">.clearfix :before&#123;</span><br><span class="line">display: block;</span><br><span class="line">content: &quot;&quot;;</span><br><span class="line">font-size: 0px;</span><br><span class="line">clear: both;</span><br><span class="line">overflow: hidden;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></div></figure>
+
+
+]]></content>
+      <categories>
+        <category>css学习</category>
+      </categories>
+      <tags>
+        <tag>css</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>j将本地项目推送到github</title>
+    <url>/2019/11/18/j%E5%B0%86%E6%9C%AC%E5%9C%B0%E9%A1%B9%E7%9B%AE%E6%8E%A8%E9%80%81%E5%88%B0github/</url>
+    <content><![CDATA[<h1 id="将本地项目推送到github"><span class="heading-link">将本地项目推送到github</span></h1><p>标签： git</p>
+<hr>
+<h2 id="方法一：-使用ssh将本地项目推送到GitHub"><span class="heading-link">方法一： 使用ssh将本地项目推送到GitHub</span></h2><h6 id="补充：1-先在GitHub中新建一个repository，我新建的是名为TEST的-respository"><span class="heading-link">补充：1.先在GitHub中新建一个repository，我新建的是名为TEST的 respository</span></h6><p><img src="https://img-blog.csdnimg.cn/20191117111038216.png" alt="在这里插入图片描述"></p>
+<h6 id="2-新建完成后如图所示点击add-deploy-key"><span class="heading-link">2.新建完成后如图所示点击add deploy key</span></h6><p><img src="https://img-blog.csdnimg.cn/20191117111629133.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDA4OTI1OQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20191117112055459.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDA4OTI1OQ==,size_16,color_FFFFFF,t_70" alt></p>
+<hr>
+<h3 id="1-首先生成ssh密钥"><span class="heading-link">1.首先生成ssh密钥</span></h3><figure class="highlight plain"><div class="table-container"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;your email&quot;</span><br></pre></td></tr></table></div></figure>
+
+<p><img src="https://img-blog.csdnimg.cn/20191117105949398.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDA4OTI1OQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片方描述"><br><em>以上三个地方按回车即可；</em></p>
+<h3 id="2-找到生成的-ssh文件夹，复制id-rsa-pub，一般是位于用户目录下的-ssh目录中-把复制好的id-rsa-pub粘贴到下图的key中，Title可随意描述，最后add-key"><span class="heading-link">2.找到生成的.ssh文件夹，复制id_rsa.pub，一般是位于用户目录下的.ssh目录中,把复制好的id-rsa.pub粘贴到下图的key中，Title可随意描述，最后add key</span></h3><p><img src="https://img-blog.csdnimg.cn/20191117110646242.png" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20191117112155216.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDA4OTI1OQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h3 id="3-检查能否成功通讯ssh-T-git-github-com"><span class="heading-link">3.检查能否成功通讯ssh -T git@github.com</span></h3><figure class="highlight plain"><div class="table-container"><table><tr><td class="code"><pre><span class="line">cd ~/.ssh    </span><br><span class="line"># 检查下自己之前有没有已经生成.ssh</span><br></pre></td></tr></table></div></figure>
+<p><img src="https://img-blog.csdnimg.cn/20191117114208498.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDA4OTI1OQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br> 如果能进入到.ssh文件目录下 ，则证明，之前生成过.ssh秘钥，可以直接使用里面的秘钥。 如果不能进入到.ssh文件目录下，则： 检测下自己之前有没有配置：<br>git config –global user.name ‘xxxxx’<br>git config –global user.email ‘<span class="external-link"><a href="mailto:xxx@xx.xxx" target="_blank" rel="noopener">xxx@xx.xxx</a><i class="fa fa-external-link"></i></span>’</p>
+<h3 id="4-推送本地文件到GitHub"><span class="heading-link">4.推送本地文件到GitHub</span></h3><p><em>注意：要在推送文件的根目录下 ’git bash here‘</em><br><img src="https://img-blog.csdnimg.cn/2019111712002082.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDA4OTI1OQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h3 id="5-上传完成"><span class="heading-link">5.上传完成</span></h3><p>   <img src="https://img-blog.csdnimg.cn/20191117120518557.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDA4OTI1OQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h2 id="方法二：使用https推送"><span class="heading-link">方法二：使用https推送</span></h2><h3 id="1-创建一个仓库"><span class="heading-link">1.创建一个仓库</span></h3><p><img src="https://img-blog.csdnimg.cn/2019111712130149.png" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/201911171215027.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDA4OTI1OQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>创建成功后显示如下信息：<img src="https://img-blog.csdnimg.cn/20191117121744371.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDA4OTI1OQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>以上信息告诉我们可以从这个仓库克隆出新的仓库，也可以把本地仓库的内容推送到GitHub仓库。<br>现在，我们根据 GitHub 的提示，在本地的仓库下运行命令：</p>
+<p><img src="https://img-blog.csdnimg.cn/20191117122812345.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDA4OTI1OQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>详细参见<br><span class="external-link"><a href="https://www.runoob.com/git/git-remote-repo.html" target="_blank" rel="noopener">Git 远程仓库(Github)</a><i class="fa fa-external-link"></i></span><br><span class="external-link"><a href="https://shan333.cn/2019/03/08/%E5%B0%86%E6%9C%AC%E5%9C%B0%E9%A1%B9%E7%9B%AE%E6%8E%A8%E9%80%81%E5%88%B0GitHub%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93/" target="_blank" rel="noopener">如何将本地项目推送到Github</a><i class="fa fa-external-link"></i></span></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2019/11/18/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <span class="external-link"><a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a><i class="fa fa-external-link"></i></span>! This is your very first post. Check <span class="external-link"><a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a><i class="fa fa-external-link"></i></span> for more info. If you get any problems when using Hexo, you can find the answer in <span class="external-link"><a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a><i class="fa fa-external-link"></i></span> or you can ask me on <span class="external-link"><a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a><i class="fa fa-external-link"></i></span>.</p>
+<h2 id="Quick-Start"><span class="heading-link">Quick Start</span></h2><h3 id="Create-a-new-post"><span class="heading-link">Create a new post</span></h3><figure class="highlight bash"><div class="table-container"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></div></figure>
+
+<p>More info: <span class="external-link"><a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a><i class="fa fa-external-link"></i></span></p>
+<h3 id="Run-server"><span class="heading-link">Run server</span></h3><figure class="highlight bash"><div class="table-container"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></div></figure>
+
+<p>More info: <span class="external-link"><a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a><i class="fa fa-external-link"></i></span></p>
+<h3 id="Generate-static-files"><span class="heading-link">Generate static files</span></h3><figure class="highlight bash"><div class="table-container"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></div></figure>
+
+<p>More info: <span class="external-link"><a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a><i class="fa fa-external-link"></i></span></p>
+<h3 id="Deploy-to-remote-sites"><span class="heading-link">Deploy to remote sites</span></h3><figure class="highlight bash"><div class="table-container"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></div></figure>
+
+<p>More info: <span class="external-link"><a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a><i class="fa fa-external-link"></i></span></p>
+]]></content>
+  </entry>
+</search>
