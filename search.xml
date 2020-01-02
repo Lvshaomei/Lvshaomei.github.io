@@ -1,6 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>2019年自我总结</title>
+    <url>/2020/01/02/2019%E5%B9%B4%E8%87%AA%E6%88%91%E6%80%BB%E7%BB%93/</url>
+    <content><![CDATA[<p><img src="https://img-blog.csdnimg.cn/20200102123429310.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDA4OTI1OQ==,size_16,color_FFFFFF,t_70" alt="你好2020"></p>
+<h2 id="前言"><span class="heading-link">前言</span></h2><p>时间过得很快，转眼间已经大二了，这个学期只有短短的十八周时间，使我一直忙碌与各种考试，各种课程，对自己所想学的东西一直止步与初学的状态，并且很多计划都没有得到实施。所以2019年让我感到很惭愧。现在2020年已经悄悄的来到，我开始更新了计划，希望在新的一年我的计划能够实施，不会有太多变数。<img src="https://img-blog.csdnimg.cn/20200102123824163.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDA4OTI1OQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h2 id="总结2019"><span class="heading-link">总结2019</span></h2><p>在2019年了我开始接触了前端相关的内容，开始了更有方向更有目标的学习。但是回过头来想想自己还是一如既往得菜，感觉没有学什么。也许我就是所谓的行动上的弱者吧（惭愧惭愧）。在学习过程中发现自己也有很多不足之处：</p>
+<ol>
+<li>对于某个方面的知识大多数只是看看理论部分，忽视了行动上的操作（动手敲)。</li>
+<li>会一种不学完某方面知识，就不进入下一阶段的学习，所以导致接触的很少，学得也很浅。</li>
+<li>自我感觉自己的学习效率很低，也由于某些因素的影响，导致花在这方面的时间也很少（太难了）。</li>
+<li>做事情有时会漫无目的，接触的东西也就零零散散。</li>
+</ol>
+<p>现实就是这样残酷不进则退，若不不去学习，尝试，自己就永远是在退步。 </p>
+<h2 id="2020新年新期望"><span class="heading-link">2020新年新期望</span></h2><p>2020年的钟声已经敲响，希望在新的一年里，也寄托了新的期望:</p>
+<ul>
+<li><p>能够把计划都实现吧！！</p>
+</li>
+<li><p>把自己学习过程中的不足都改掉.</p>
+</li>
+<li><p>多看书（自己看书看太少了。。。）</p>
+</li>
+<li><p>新的学期多参加比赛吧。。</p>
+<p>最后借亲爱的习大大新年贺词，送自己一句话：</p>
+</li>
+</ul>
+<h2 id="只争朝夕，不负韶华"><span class="heading-link">只争朝夕，不负韶华</span></h2>]]></content>
+  </entry>
+  <entry>
     <title>HTML----浮动(高度塌陷)</title>
     <url>/2019/11/18/HTML----%E6%B5%AE%E5%8A%A8(%E9%AB%98%E5%BA%A6%E5%A1%8C%E9%99%B7)/</url>
     <content><![CDATA[<h3 id="定义"><span class="heading-link">定义</span></h3><p> 浮动:通常无法左右排列，则设置了浮动的元素会往左或者右移动，直到遇到另一个元素或者外边距</p>
