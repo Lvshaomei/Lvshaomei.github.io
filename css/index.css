@@ -1292,6 +1292,9 @@ td {
 .post-header-meta-reading-count {
   color: #fc6423;
 }
+.post-header-meta .leancloud_visitors {
+  color: #fc6423;
+}
 .highlight.js figcaption span:first-child::before {
   content: 'js';
   margin: 0 0.6rem 0 0;
@@ -1996,6 +1999,14 @@ td {
 .friends-plugin__item-info__intro {
   font-size: 0.9em;
   color: #999;
+}
+.busuanzi-site_uv,
+.busuanzi-site_pv {
+  color: #f4f5f5;
+}
+.busuanzi-site_uv i,
+.busuanzi-site_pv i {
+  margin: 0 0.3rem 0 0;
 }
 @media (min-width: 1341.98px) {
   .header-nav-inner {
