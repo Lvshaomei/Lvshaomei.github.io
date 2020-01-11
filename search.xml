@@ -5,9 +5,9 @@
     <url>/2020/01/06/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%B5%84%E6%BA%90%E6%B1%87%E6%80%BB/</url>
     <content><![CDATA[<h1 id="几种常见的博客搭建资源汇总"><span class="heading-link">几种常见的博客搭建资源汇总</span></h1><h2 id="前言"><span class="heading-link">前言</span></h2><p>本文给出了几种常见的个人网站（博客）搭建方式的教程资源。官方文档为主，B站视频教程为辅。比较适合喜欢折腾的同学。不喜欢折腾的可以直接使用CSDN博客、博客园、<span class="external-link"><a href="https://www.yuque.com/yuque" target="_blank" rel="noopener"><strong>语雀</strong></a><i class="fa fa-external-link"></i></span>等提供的服务。<strong>别忘了博客的初心是记录</strong>。</p>
 <p>常见的个人博客、网站、知识库搭建方式如下：</p>
-<p><img src="https://img.vim-cn.com/f9/975cc8edad012fd6bb712fdbbc2d311d5309a4.png" alt></p>
+<p><img src="https://img.vim-cn.com/f9/975cc8edad012fd6bb712fdbbc2d311d5309a4.png" alt=""></p>
 <p>动态管理系统需要使用服务器部署，因为这些系统的数据大都存放在数据库。现今大部分的云服务商（<span class="external-link"><a href="https://www.alibabacloud.com/zh/campaign/free-trial?spm=a2796.7919406.1389991.dbannerazhfreetrial.5b8c2d23QXhsV9" target="_blank" rel="noopener">阿里云</a><i class="fa fa-external-link"></i></span>、<span class="external-link"><a href="https://amazonaws-china.com/cn/free/" target="_blank" rel="noopener">AWS</a><i class="fa fa-external-link"></i></span>、<span class="external-link"><a href="https://cloud.tencent.com/act/free" target="_blank" rel="noopener">腾讯云</a><i class="fa fa-external-link"></i></span>等等）大都提供了一个月甚至一年的服务器试用期。</p>
-<p>依赖静态站点生成器生成的网站不仅可以部署在服务器上，还可以利用一些免费的站点托管服务进行托管，比如<span class="external-link"><a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub</a><i class="fa fa-external-link"></i></span>、<span class="external-link"><a href="https://coding.net/help/doc/pages" target="_blank" rel="noopener">Coding</a><i class="fa fa-external-link"></i></span>、<span class="external-link"><a href="https://coding.net/help/doc/pages" target="_blank" rel="noopener">Gitlab</a><i class="fa fa-external-link"></i></span>等提供的Pages服务和<span class="external-link"><a href="https://docs.readthedocs.io/en/stable/index.html" target="_blank" rel="noopener">Read the Docs</a><i class="fa fa-external-link"></i></span>的文档托管服务。深入折腾的同学还会接触到一些<span class="external-link"><a href="https://www.redhat.com/zh/topics/devops/what-is-ci-cd" target="_blank" rel="noopener">CI/CD</a><i class="fa fa-external-link"></i></span>工具链、<span class="external-link"><a href="https://baike.baidu.com/item/%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E4%BC%98%E5%8C%96/3132?fromtitle=SEO&fromid=102990" target="_blank" rel="noopener">SEO</a><i class="fa fa-external-link"></i></span>技巧等等。</p>
+<p>依赖静态站点生成器生成的网站不仅可以部署在服务器上，还可以利用一些免费的站点托管服务进行托管，比如<span class="external-link"><a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub</a><i class="fa fa-external-link"></i></span>、<span class="external-link"><a href="https://coding.net/help/doc/pages" target="_blank" rel="noopener">Coding</a><i class="fa fa-external-link"></i></span>、<span class="external-link"><a href="https://coding.net/help/doc/pages" target="_blank" rel="noopener">Gitlab</a><i class="fa fa-external-link"></i></span>等提供的Pages服务和<span class="external-link"><a href="https://docs.readthedocs.io/en/stable/index.html" target="_blank" rel="noopener">Read the Docs</a><i class="fa fa-external-link"></i></span>的文档托管服务。深入折腾的同学还会接触到一些<span class="external-link"><a href="https://www.redhat.com/zh/topics/devops/what-is-ci-cd" target="_blank" rel="noopener">CI/CD</a><i class="fa fa-external-link"></i></span>工具链、<span class="external-link"><a href="https://baike.baidu.com/item/%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E4%BC%98%E5%8C%96/3132?fromtitle=SEO&amp;fromid=102990" target="_blank" rel="noopener">SEO</a><i class="fa fa-external-link"></i></span>技巧等等。</p>
 <p>对于Web开发者，你可能会接触到一些BASS服务提供商，比如<span class="external-link"><a href="https://www.leancloud.cn/" target="_blank" rel="noopener">LeanCloud</a><i class="fa fa-external-link"></i></span>、<span class="external-link"><a href="https://www.bmob.cn/" target="_blank" rel="noopener">Bmob</a><i class="fa fa-external-link"></i></span>、<span class="external-link"><a href="https://firebase.google.com/?hl=zh-cn" target="_blank" rel="noopener">firebase</a><i class="fa fa-external-link"></i></span>。</p>
 <h2 id="1-WordPress搭建个人博客"><span class="heading-link">1.WordPress搭建个人博客</span></h2><p>首先根据维基百科来介绍一下WordPress：</p>
 <blockquote>
@@ -43,8 +43,8 @@
 <p><strong>具体详细操作详见如下文档和视频：</strong></p>
 <p><span class="external-link"><a href="https://wordpress.com/create-blog/" target="_blank" rel="noopener">wordpress搭建博客</a><i class="fa fa-external-link"></i></span></p>
 <p><span class="external-link"><a href="https://www.jianshu.com/p/d4beb61fc3c0" target="_blank" rel="noopener">教你用WordPress搭建一个简单的个人博客</a><i class="fa fa-external-link"></i></span></p>
-<p><span class="external-link"><a href="https://www.bilibili.com/video/av9058563/?share_medium=web&share_source=qq&bbid=B8CCEBFD-2865-4967-9C06-001E0279A4A2155809infoc&ts=1578290731898" target="_blank" rel="noopener">免费搭建自己的wordpress博客&lt;视频教程&gt;</a><i class="fa fa-external-link"></i></span></p>
-<p><span class="external-link"><a href="https://www.bilibili.com/video/av2584946/?share_medium=web&share_source=qq&bbid=B8CCEBFD-2865-4967-9C06-001E0279A4A2155809infoc&ts=1578292142882" target="_blank" rel="noopener">使用WordPress搭建博客网站</a><i class="fa fa-external-link"></i></span></p>
+<p><span class="external-link"><a href="https://www.bilibili.com/video/av9058563/?share_medium=web&amp;share_source=qq&amp;bbid=B8CCEBFD-2865-4967-9C06-001E0279A4A2155809infoc&amp;ts=1578290731898" target="_blank" rel="noopener">免费搭建自己的wordpress博客&lt;视频教程&gt;</a><i class="fa fa-external-link"></i></span></p>
+<p><span class="external-link"><a href="https://www.bilibili.com/video/av2584946/?share_medium=web&amp;share_source=qq&amp;bbid=B8CCEBFD-2865-4967-9C06-001E0279A4A2155809infoc&amp;ts=1578292142882" target="_blank" rel="noopener">使用WordPress搭建博客网站</a><i class="fa fa-external-link"></i></span></p>
 <h2 id="2-Typecho-搭建个人博客"><span class="heading-link">2.Typecho 搭建个人博客</span></h2><p>首先介绍一下Typecho：</p>
 <p><strong>Typecho</strong>是一个基于<span class="external-link"><a href="https://zh.wikipedia.org/wiki/PHP" target="_blank" rel="noopener">PHP</a><i class="fa fa-external-link"></i></span>的简洁的开源博客程序。它使用多种数据库（<span class="external-link"><a href="https://zh.wikipedia.org/wiki/MySQL" target="_blank" rel="noopener">MySQL</a><i class="fa fa-external-link"></i></span>、<span class="external-link"><a href="https://zh.wikipedia.org/wiki/PostgreSQL" target="_blank" rel="noopener">PostgreSQL</a><i class="fa fa-external-link"></i></span>、<span class="external-link"><a href="https://zh.wikipedia.org/wiki/SQLite" target="_blank" rel="noopener">SQLite</a><i class="fa fa-external-link"></i></span>、<span class="external-link"><a href="https://zh.wikipedia.org/wiki/MariaDB" target="_blank" rel="noopener">MariaDB</a><i class="fa fa-external-link"></i></span>）储存数据，在<span class="external-link"><a href="https://zh.wikipedia.org/wiki/GNU通用公共许可协议" target="_blank" rel="noopener">GNU GPLv2</a><i class="fa fa-external-link"></i></span>许可证下发行</p>
 <ul>
@@ -92,7 +92,25 @@
 <h2 id="8-VuePress搭建个人博客"><span class="heading-link">8.VuePress搭建个人博客</span></h2><p><span class="external-link"><a href="https://www.vuepress.cn/guide/" target="_blank" rel="noopener">VuePress中文文档</a><i class="fa fa-external-link"></i></span></p>
 <p><span class="external-link"><a href="https://www.bilibili.com/video/av75219827/" target="_blank" rel="noopener">VuePress搭建个人博客</a><i class="fa fa-external-link"></i></span></p>
 <h2 id="9-docsify搭建个人文档"><span class="heading-link">9.docsify搭建个人文档</span></h2><p><span class="external-link"><a href="https://docsify.js.org/#/" target="_blank" rel="noopener">docsify官方文档</a><i class="fa fa-external-link"></i></span></p>
-]]></content>
+<script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>]]></content>
       <categories>
         <category>博客搭建</category>
       </categories>
@@ -125,7 +143,25 @@
 <p>最后借亲爱的习大大新年贺词，送自己一句话：</p>
 </li>
 </ul>
-<h2 id="只争朝夕，不负韶华"><span class="heading-link">只争朝夕，不负韶华</span></h2>]]></content>
+<h2 id="只争朝夕，不负韶华"><span class="heading-link">只争朝夕，不负韶华</span></h2><script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>]]></content>
       <categories>
         <category>自我总结</category>
       </categories>
@@ -139,20 +175,38 @@
     <content><![CDATA[<p>﻿# 将本地项目推送到github</p>
 <hr>
 <h2 id="方法一：-使用ssh将本地项目推送到GitHub"><span class="heading-link">方法一： 使用ssh将本地项目推送到GitHub</span></h2><h6 id="补充：1-先在GitHub中新建一个repository，我新建的是名为TEST的-respository"><span class="heading-link">补充：1.先在GitHub中新建一个repository，我新建的是名为TEST的 respository</span></h6><p><img src="https://img-blog.csdnimg.cn/20191117111038216.png" alt="在这里插入图片描述"></p>
-<h6 id="2-新建完成后如图所示点击add-deploy-key"><span class="heading-link">2.新建完成后如图所示点击add deploy key</span></h6><p><img src="https://img-blog.csdnimg.cn/20191117111629133.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDA4OTI1OQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20191117112055459.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDA4OTI1OQ==,size_16,color_FFFFFF,t_70" alt></p>
+<h6 id="2-新建完成后如图所示点击add-deploy-key"><span class="heading-link">2.新建完成后如图所示点击add deploy key</span></h6><p><img src="https://img-blog.csdnimg.cn/20191117111629133.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDA4OTI1OQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20191117112055459.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDA4OTI1OQ==,size_16,color_FFFFFF,t_70" alt=""></p>
 <hr>
-<h3 id="1-首先生成ssh密钥"><span class="heading-link">1.首先生成ssh密钥</span></h3><figure class="highlight plain"><div class="table-container"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;your email&quot;</span><br></pre></td></tr></table></div></figure>
+<h3 id="1-首先生成ssh密钥"><span class="heading-link">1.首先生成ssh密钥</span></h3><figure class="highlight plain"><div class="table-container"><table><tbody><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -C "your email"</span><br></pre></td></tr></tbody></table></div></figure>
 
 <p><img src="https://img-blog.csdnimg.cn/20191117105949398.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDA4OTI1OQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片方描述"><br><em>以上三个地方按回车即可；</em></p>
 <h3 id="2-找到生成的-ssh文件夹，复制id-rsa-pub，一般是位于用户目录下的-ssh目录中-把复制好的id-rsa-pub粘贴到下图的key中，Title可随意描述，最后add-key"><span class="heading-link">2.找到生成的.ssh文件夹，复制id_rsa.pub，一般是位于用户目录下的.ssh目录中,把复制好的id-rsa.pub粘贴到下图的key中，Title可随意描述，最后add key</span></h3><p><img src="https://img-blog.csdnimg.cn/20191117110646242.png" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20191117112155216.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDA4OTI1OQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<h3 id="3-检查能否成功通讯ssh-T-git-github-com"><span class="heading-link">3.检查能否成功通讯ssh -T git@github.com</span></h3><figure class="highlight plain"><div class="table-container"><table><tr><td class="code"><pre><span class="line">cd ~/.ssh    </span><br><span class="line"># 检查下自己之前有没有已经生成.ssh</span><br></pre></td></tr></table></div></figure>
+<h3 id="3-检查能否成功通讯ssh-T-git-github-com"><span class="heading-link">3.检查能否成功通讯ssh -T git@github.com</span></h3><figure class="highlight plain"><div class="table-container"><table><tbody><tr><td class="code"><pre><span class="line">cd ~/.ssh    </span><br><span class="line"># 检查下自己之前有没有已经生成.ssh</span><br></pre></td></tr></tbody></table></div></figure>
 
 <p><img src="https://img-blog.csdnimg.cn/20191117114208498.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDA4OTI1OQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br> 如果能进入到.ssh文件目录下 ，则证明，之前生成过.ssh秘钥，可以直接使用里面的秘钥。 如果不能进入到.ssh文件目录下，则： 检测下自己之前有没有配置：<br>git config –global user.name ‘xxxxx’<br>git config –global user.email ‘<span class="external-link"><a href="mailto:xxx@xx.xxx" target="_blank" rel="noopener">xxx@xx.xxx</a><i class="fa fa-external-link"></i></span>’</p>
 <h3 id="4-推送本地文件到GitHub"><span class="heading-link">4.推送本地文件到GitHub</span></h3><p><em>注意：要在推送文件的根目录下 ’git bash here‘</em><br><img src="https://img-blog.csdnimg.cn/2019111712002082.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDA4OTI1OQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
 <h3 id="5-上传完成"><span class="heading-link">5.上传完成</span></h3><p>   <img src="https://img-blog.csdnimg.cn/20191117120518557.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDA4OTI1OQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
 <h2 id="方法二：使用https推送"><span class="heading-link">方法二：使用https推送</span></h2><h3 id="1-创建一个仓库"><span class="heading-link">1.创建一个仓库</span></h3><p><img src="https://img-blog.csdnimg.cn/2019111712130149.png" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/201911171215027.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDA4OTI1OQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>创建成功后显示如下信息：<img src="https://img-blog.csdnimg.cn/20191117121744371.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDA4OTI1OQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>以上信息告诉我们可以从这个仓库克隆出新的仓库，也可以把本地仓库的内容推送到GitHub仓库。<br>现在，我们根据 GitHub 的提示，在本地的仓库下运行命令：</p>
 <p><img src="https://img-blog.csdnimg.cn/20191117122812345.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDA4OTI1OQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>详细参见<br><span class="external-link"><a href="https://www.runoob.com/git/git-remote-repo.html" target="_blank" rel="noopener">Git 远程仓库(Github)</a><i class="fa fa-external-link"></i></span><br><span class="external-link"><a href="https://shan333.cn/2019/03/08/%E5%B0%86%E6%9C%AC%E5%9C%B0%E9%A1%B9%E7%9B%AE%E6%8E%A8%E9%80%81%E5%88%B0GitHub%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93/" target="_blank" rel="noopener">如何将本地项目推送到Github</a><i class="fa fa-external-link"></i></span></p>
-]]></content>
+<script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>]]></content>
       <categories>
         <category>本地推送至github</category>
       </categories>
@@ -164,22 +218,40 @@
     <title>笔记记录-浮动</title>
     <url>/2019/11/18/%E7%AC%94%E8%AE%B0%E8%AE%B0%E5%BD%95-%E6%B5%AE%E5%8A%A8/</url>
     <content><![CDATA[<h3 id="定义"><span class="heading-link">定义</span></h3><p> 浮动:通常无法左右排列，则设置了浮动的元素会往左或者右移动，直到遇到另一个元素或者外边距</p>
-<figure class="highlight plain"><div class="table-container"><table><tr><td class="code"><pre><span class="line">float:left/right;</span><br></pre></td></tr></table></div></figure>
+<figure class="highlight plain"><div class="table-container"><table><tbody><tr><td class="code"><pre><span class="line">float:left/right;</span><br></pre></td></tr></tbody></table></div></figure>
 
 <h6 id="高度塌陷问题"><span class="heading-link">高度塌陷问题</span></h6><p>子元素书写浮动属性后，父元素会产生高度塌陷的问题，也就是福原属高度为0的现象。</p>
 <h6 id="解决方法"><span class="heading-link">解决方法</span></h6><p>1、直接书写父元素高度—–必须是模块高度不会改变的情况下（不提倡）<br>2、给父元素书写溢出隐藏属性:（经常）</p>
-<figure class="highlight plain"><div class="table-container"><table><tr><td class="code"><pre><span class="line">overflow: hidden</span><br></pre></td></tr></table></div></figure>
+<figure class="highlight plain"><div class="table-container"><table><tbody><tr><td class="code"><pre><span class="line">overflow: hidden</span><br></pre></td></tr></tbody></table></div></figure>
 
 <p>3、在最后一个书写浮动属性的子元素下写个空的div标签，然后给他添加一个行内样式 <strong>clear: both</strong></p>
-<figure class="highlight plain"><div class="table-container"><table><tr><td class="code"><pre><span class="line">&lt;div style = &quot;clear:both&quot; &gt; &lt;/div&gt;</span><br></pre></td></tr></table></div></figure>
+<figure class="highlight plain"><div class="table-container"><table><tbody><tr><td class="code"><pre><span class="line">&lt;div style = "clear:both" &gt; &lt;/div&gt;</span><br></pre></td></tr></tbody></table></div></figure>
 
 <p>4、（在第二种无法解决问题情况下）<br>eg:在body中书写</p>
-<figure class="highlight plain"><div class="table-container"><table><tr><td class="code"><pre><span class="line">&lt;ul class =&quot;clearfix&quot;&gt;</span><br></pre></td></tr></table></div></figure>
+<figure class="highlight plain"><div class="table-container"><table><tbody><tr><td class="code"><pre><span class="line">&lt;ul class ="clearfix"&gt;</span><br></pre></td></tr></tbody></table></div></figure>
 
 <p>在css中设置：</p>
-<figure class="highlight plain"><div class="table-container"><table><tr><td class="code"><pre><span class="line">.clearfix :before&#123;</span><br><span class="line">display: block;</span><br><span class="line">content: &quot;&quot;;</span><br><span class="line">font-size: 0px;</span><br><span class="line">clear: both;</span><br><span class="line">overflow: hidden;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></div></figure>
+<figure class="highlight plain"><div class="table-container"><table><tbody><tr><td class="code"><pre><span class="line">.clearfix :before{</span><br><span class="line">display: block;</span><br><span class="line">content: "";</span><br><span class="line">font-size: 0px;</span><br><span class="line">clear: both;</span><br><span class="line">overflow: hidden;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></div></figure>
 
-]]></content>
+<script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>]]></content>
       <categories>
         <category>CSS相关问题解决方法</category>
       </categories>
