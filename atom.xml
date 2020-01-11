@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>lvlv</title>
+  <title>lvlv&#39;s blog</title>
   <icon>http://www.lvshaomei.club/icon.png</icon>
   <subtitle>blog</subtitle>
   <link href="/atom.xml" rel="self"/>
