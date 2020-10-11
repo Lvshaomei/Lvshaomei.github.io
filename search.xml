@@ -102,16 +102,16 @@
   <entry>
     <title>博客搭建汇总</title>
     <url>/2020/01/06/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%B5%84%E6%BA%90%E6%B1%87%E6%80%BB/</url>
-    <content><![CDATA[<h1 id="几种常见的博客搭建资源汇总"><a href="#几种常见的博客搭建资源汇总" class="headerlink" title="几种常见的博客搭建资源汇总"></a>几种常见的博客搭建资源汇总</h1><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>本文给出了几种常见的个人网站（博客）搭建方式的教程资源。官方文档为主，B站视频教程为辅。比较适合喜欢折腾的同学。不喜欢折腾的可以直接使用CSDN博客、博客园、<a href="https://www.yuque.com/yuque" target="_blank" rel="noopener"><strong>语雀</strong></a>等提供的服务。<strong>别忘了博客的初心是记录</strong>。</p>
+    <content><![CDATA[<h1 id="几种常见的博客搭建资源汇总"><span class="heading-link">几种常见的博客搭建资源汇总</span></h1><h2 id="前言"><span class="heading-link">前言</span></h2><p>本文给出了几种常见的个人网站（博客）搭建方式的教程资源。官方文档为主，B站视频教程为辅。比较适合喜欢折腾的同学。不喜欢折腾的可以直接使用CSDN博客、博客园、<span class="external-link"><a href="https://www.yuque.com/yuque" target="_blank" rel="noopener"><strong>语雀</strong></a><i class="fa fa-external-link"></i></span>等提供的服务。<strong>别忘了博客的初心是记录</strong>。</p>
 <a id="more"></a>
 <p>常见的个人博客、网站、知识库搭建方式如下：</p>
 <p><img src="https://img.vim-cn.com/f9/975cc8edad012fd6bb712fdbbc2d311d5309a4.png" alt=""></p>
-<p>动态管理系统需要使用服务器部署，因为这些系统的数据大都存放在数据库。现今大部分的云服务商（<a href="https://www.alibabacloud.com/zh/campaign/free-trial?spm=a2796.7919406.1389991.dbannerazhfreetrial.5b8c2d23QXhsV9" target="_blank" rel="noopener">阿里云</a>、<a href="https://amazonaws-china.com/cn/free/" target="_blank" rel="noopener">AWS</a>、<a href="https://cloud.tencent.com/act/free" target="_blank" rel="noopener">腾讯云</a>等等）大都提供了一个月甚至一年的服务器试用期。<!--more--></p>
-<p>依赖静态站点生成器生成的网站不仅可以部署在服务器上，还可以利用一些免费的站点托管服务进行托管，比如<a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub</a>、<a href="https://coding.net/help/doc/pages" target="_blank" rel="noopener">Coding</a>、<a href="https://coding.net/help/doc/pages" target="_blank" rel="noopener">Gitlab</a>等提供的Pages服务和<a href="https://docs.readthedocs.io/en/stable/index.html" target="_blank" rel="noopener">Read the Docs</a>的文档托管服务。深入折腾的同学还会接触到一些<a href="https://www.redhat.com/zh/topics/devops/what-is-ci-cd" target="_blank" rel="noopener">CI/CD</a>工具链、<a href="https://baike.baidu.com/item/%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E4%BC%98%E5%8C%96/3132?fromtitle=SEO&amp;fromid=102990" target="_blank" rel="noopener">SEO</a>技巧等等。</p>
-<p>对于Web开发者，你可能会接触到一些BASS服务提供商，比如<a href="https://www.leancloud.cn/" target="_blank" rel="noopener">LeanCloud</a>、<a href="https://www.bmob.cn/" target="_blank" rel="noopener">Bmob</a>、<a href="https://firebase.google.com/?hl=zh-cn" target="_blank" rel="noopener">firebase</a>。</p>
-<h2 id="1-WordPress搭建个人博客"><a href="#1-WordPress搭建个人博客" class="headerlink" title="1.WordPress搭建个人博客"></a>1.WordPress搭建个人博客</h2><p>首先根据维基百科来介绍一下WordPress：</p>
+<p>动态管理系统需要使用服务器部署，因为这些系统的数据大都存放在数据库。现今大部分的云服务商（<span class="external-link"><a href="https://www.alibabacloud.com/zh/campaign/free-trial?spm=a2796.7919406.1389991.dbannerazhfreetrial.5b8c2d23QXhsV9" target="_blank" rel="noopener">阿里云</a><i class="fa fa-external-link"></i></span>、<span class="external-link"><a href="https://amazonaws-china.com/cn/free/" target="_blank" rel="noopener">AWS</a><i class="fa fa-external-link"></i></span>、<span class="external-link"><a href="https://cloud.tencent.com/act/free" target="_blank" rel="noopener">腾讯云</a><i class="fa fa-external-link"></i></span>等等）大都提供了一个月甚至一年的服务器试用期。<!--more--></p>
+<p>依赖静态站点生成器生成的网站不仅可以部署在服务器上，还可以利用一些免费的站点托管服务进行托管，比如<span class="external-link"><a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub</a><i class="fa fa-external-link"></i></span>、<span class="external-link"><a href="https://coding.net/help/doc/pages" target="_blank" rel="noopener">Coding</a><i class="fa fa-external-link"></i></span>、<span class="external-link"><a href="https://coding.net/help/doc/pages" target="_blank" rel="noopener">Gitlab</a><i class="fa fa-external-link"></i></span>等提供的Pages服务和<span class="external-link"><a href="https://docs.readthedocs.io/en/stable/index.html" target="_blank" rel="noopener">Read the Docs</a><i class="fa fa-external-link"></i></span>的文档托管服务。深入折腾的同学还会接触到一些<span class="external-link"><a href="https://www.redhat.com/zh/topics/devops/what-is-ci-cd" target="_blank" rel="noopener">CI/CD</a><i class="fa fa-external-link"></i></span>工具链、<span class="external-link"><a href="https://baike.baidu.com/item/%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E4%BC%98%E5%8C%96/3132?fromtitle=SEO&amp;fromid=102990" target="_blank" rel="noopener">SEO</a><i class="fa fa-external-link"></i></span>技巧等等。</p>
+<p>对于Web开发者，你可能会接触到一些BASS服务提供商，比如<span class="external-link"><a href="https://www.leancloud.cn/" target="_blank" rel="noopener">LeanCloud</a><i class="fa fa-external-link"></i></span>、<span class="external-link"><a href="https://www.bmob.cn/" target="_blank" rel="noopener">Bmob</a><i class="fa fa-external-link"></i></span>、<span class="external-link"><a href="https://firebase.google.com/?hl=zh-cn" target="_blank" rel="noopener">firebase</a><i class="fa fa-external-link"></i></span>。</p>
+<h2 id="1-WordPress搭建个人博客"><span class="heading-link">1.WordPress搭建个人博客</span></h2><p>首先根据维基百科来介绍一下WordPress：</p>
 <blockquote>
-<p><strong>WordPress</strong>是一个以<a href="https://zh.wikipedia.org/wiki/PHP" target="_blank" rel="noopener">PHP</a>和<a href="https://zh.wikipedia.org/wiki/MySQL" target="_blank" rel="noopener">MySQL</a>为平台的<a href="https://zh.wikipedia.org/wiki/自由及开放源代码软件" target="_blank" rel="noopener">自由开源</a>的博客软件和<a href="https://zh.wikipedia.org/wiki/内容管理系统" target="_blank" rel="noopener">内容管理系统</a>。WordPress具有插件架构和模板系统。截至2018年4月，排名前1000万的网站中超过30.6%使用WordPress。WordPress是最受欢迎的网站<a href="https://zh.wikipedia.org/wiki/内容管理系统" target="_blank" rel="noopener">内容管理系统</a>。WordPress是当前<a href="https://zh.wikipedia.org/wiki/因特网" target="_blank" rel="noopener">因特网</a>上最流行的博客系统。WordPress在最著名的网络发布阶段中脱颖而出。如今，它被使用在超过7000万个站点上。</p>
+<p><strong>WordPress</strong>是一个以<span class="external-link"><a href="https://zh.wikipedia.org/wiki/PHP" target="_blank" rel="noopener">PHP</a><i class="fa fa-external-link"></i></span>和<span class="external-link"><a href="https://zh.wikipedia.org/wiki/MySQL" target="_blank" rel="noopener">MySQL</a><i class="fa fa-external-link"></i></span>为平台的<span class="external-link"><a href="https://zh.wikipedia.org/wiki/自由及开放源代码软件" target="_blank" rel="noopener">自由开源</a><i class="fa fa-external-link"></i></span>的博客软件和<span class="external-link"><a href="https://zh.wikipedia.org/wiki/内容管理系统" target="_blank" rel="noopener">内容管理系统</a><i class="fa fa-external-link"></i></span>。WordPress具有插件架构和模板系统。截至2018年4月，排名前1000万的网站中超过30.6%使用WordPress。WordPress是最受欢迎的网站<span class="external-link"><a href="https://zh.wikipedia.org/wiki/内容管理系统" target="_blank" rel="noopener">内容管理系统</a><i class="fa fa-external-link"></i></span>。WordPress是当前<span class="external-link"><a href="https://zh.wikipedia.org/wiki/因特网" target="_blank" rel="noopener">因特网</a><i class="fa fa-external-link"></i></span>上最流行的博客系统。WordPress在最著名的网络发布阶段中脱颖而出。如今，它被使用在超过7000万个站点上。</p>
 </blockquote>
 <p><strong>步骤：</strong></p>
 <ul>
@@ -141,12 +141,12 @@
 </li>
 </ul>
 <p><strong>具体详细操作详见如下文档和视频：</strong></p>
-<p><a href="https://wordpress.com/create-blog/" target="_blank" rel="noopener">wordpress搭建博客</a></p>
-<p><a href="https://www.jianshu.com/p/d4beb61fc3c0" target="_blank" rel="noopener">教你用WordPress搭建一个简单的个人博客</a></p>
-<p><a href="https://www.bilibili.com/video/av9058563/?share_medium=web&amp;share_source=qq&amp;bbid=B8CCEBFD-2865-4967-9C06-001E0279A4A2155809infoc&amp;ts=1578290731898" target="_blank" rel="noopener">免费搭建自己的wordpress博客&lt;视频教程&gt;</a></p>
-<p><a href="https://www.bilibili.com/video/av2584946/?share_medium=web&amp;share_source=qq&amp;bbid=B8CCEBFD-2865-4967-9C06-001E0279A4A2155809infoc&amp;ts=1578292142882" target="_blank" rel="noopener">使用WordPress搭建博客网站</a></p>
-<h2 id="2-Typecho-搭建个人博客"><a href="#2-Typecho-搭建个人博客" class="headerlink" title="2.Typecho 搭建个人博客"></a><strong>2.Typecho 搭建个人博客</strong></h2><p>首先介绍一下Typecho：</p>
-<p><strong>Typecho</strong>是一个基于<a href="https://zh.wikipedia.org/wiki/PHP" target="_blank" rel="noopener">PHP</a>的简洁的开源博客程序。它使用多种数据库（<a href="https://zh.wikipedia.org/wiki/MySQL" target="_blank" rel="noopener">MySQL</a>、<a href="https://zh.wikipedia.org/wiki/PostgreSQL" target="_blank" rel="noopener">PostgreSQL</a>、<a href="https://zh.wikipedia.org/wiki/SQLite" target="_blank" rel="noopener">SQLite</a>、<a href="https://zh.wikipedia.org/wiki/MariaDB" target="_blank" rel="noopener">MariaDB</a>）储存数据，在<a href="https://zh.wikipedia.org/wiki/GNU通用公共许可协议" target="_blank" rel="noopener">GNU GPLv2</a>许可证下发行</p>
+<p><span class="external-link"><a href="https://wordpress.com/create-blog/" target="_blank" rel="noopener">wordpress搭建博客</a><i class="fa fa-external-link"></i></span></p>
+<p><span class="external-link"><a href="https://www.jianshu.com/p/d4beb61fc3c0" target="_blank" rel="noopener">教你用WordPress搭建一个简单的个人博客</a><i class="fa fa-external-link"></i></span></p>
+<p><span class="external-link"><a href="https://www.bilibili.com/video/av9058563/?share_medium=web&amp;share_source=qq&amp;bbid=B8CCEBFD-2865-4967-9C06-001E0279A4A2155809infoc&amp;ts=1578290731898" target="_blank" rel="noopener">免费搭建自己的wordpress博客&lt;视频教程&gt;</a><i class="fa fa-external-link"></i></span></p>
+<p><span class="external-link"><a href="https://www.bilibili.com/video/av2584946/?share_medium=web&amp;share_source=qq&amp;bbid=B8CCEBFD-2865-4967-9C06-001E0279A4A2155809infoc&amp;ts=1578292142882" target="_blank" rel="noopener">使用WordPress搭建博客网站</a><i class="fa fa-external-link"></i></span></p>
+<h2 id="2-Typecho-搭建个人博客"><span class="heading-link">2.Typecho 搭建个人博客</span></h2><p>首先介绍一下Typecho：</p>
+<p><strong>Typecho</strong>是一个基于<span class="external-link"><a href="https://zh.wikipedia.org/wiki/PHP" target="_blank" rel="noopener">PHP</a><i class="fa fa-external-link"></i></span>的简洁的开源博客程序。它使用多种数据库（<span class="external-link"><a href="https://zh.wikipedia.org/wiki/MySQL" target="_blank" rel="noopener">MySQL</a><i class="fa fa-external-link"></i></span>、<span class="external-link"><a href="https://zh.wikipedia.org/wiki/PostgreSQL" target="_blank" rel="noopener">PostgreSQL</a><i class="fa fa-external-link"></i></span>、<span class="external-link"><a href="https://zh.wikipedia.org/wiki/SQLite" target="_blank" rel="noopener">SQLite</a><i class="fa fa-external-link"></i></span>、<span class="external-link"><a href="https://zh.wikipedia.org/wiki/MariaDB" target="_blank" rel="noopener">MariaDB</a><i class="fa fa-external-link"></i></span>）储存数据，在<span class="external-link"><a href="https://zh.wikipedia.org/wiki/GNU通用公共许可协议" target="_blank" rel="noopener">GNU GPLv2</a><i class="fa fa-external-link"></i></span>许可证下发行</p>
 <ul>
 <li>搭建步骤：<ul>
 <li><ol>
@@ -173,25 +173,25 @@
 </li>
 </ul>
 <p><strong>具体详细操作流程可参照以下文章和视频：</strong></p>
-<p><a href="https://www.typechodev.com/docs/zh_CN/" target="_blank" rel="noopener">typecho文档</a></p>
-<p><a href="https://www.bilibili.com/video/av58051427/" target="_blank" rel="noopener">typecho搭建自己博客网站视频</a></p>
-<p><a href="https://www.bilibili.com/video/av59230340/" target="_blank" rel="noopener">使用typecho搭建个人博客视频</a></p>
-<h2 id="3-使用Hugo搭建个人博客"><a href="#3-使用Hugo搭建个人博客" class="headerlink" title="3.使用Hugo搭建个人博客"></a><strong>3.使用Hugo搭建个人博客</strong></h2><p>详细介绍请参照Hugo文档：</p>
-<p><a href="https://www.gohugo.org/doc/" target="_blank" rel="noopener">Hugo中文文档</a></p>
-<p><a href="https://www.bilibili.com/video/av49116509/" target="_blank" rel="noopener">Hugo博客搭建视频教程</a></p>
-<p><a href="https://www.bilibili.com/video/av62786612/" target="_blank" rel="noopener">使用Hugo搭建个人博客</a></p>
-<h2 id="4-Hexo-GitHub搭建博客"><a href="#4-Hexo-GitHub搭建博客" class="headerlink" title="4.Hexo+GitHub搭建博客"></a><strong>4.Hexo+GitHub搭建博客</strong></h2><p><a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener">Hexo官方文档</a></p>
-<p><a href="https://www.bilibili.com/video/av24897960?p=3" target="_blank" rel="noopener">Hexo视频教程</a></p>
-<p><a href="https://blog.csdn.net/qq_36759224/article/details/82121420" target="_blank" rel="noopener">ShanSan的好友TRHX的手把手小白教程</a></p>
-<h2 id="5-Jekyll搭建个人博客"><a href="#5-Jekyll搭建个人博客" class="headerlink" title="5.Jekyll搭建个人博客"></a><strong>5.Jekyll搭建个人博客</strong></h2><p><a href="https://jekyllcn.com/docs/home/" target="_blank" rel="noopener">Jekyll文档</a></p>
-<p><a href="https://www.bilibili.com/video/av13994132/" target="_blank" rel="noopener">Jekyll搭建个人博客视频教程</a></p>
-<h2 id="6-GitBook"><a href="#6-GitBook" class="headerlink" title="6.GitBook"></a><strong>6.GitBook</strong></h2><p><a href="https://chrisniael.gitbooks.io/gitbook-documentation/content/index.html" target="_blank" rel="noopener">GitBook文档</a></p>
-<p><a href="https://www.bilibili.com/video/av53704955/" target="_blank" rel="noopener">GitBook视频</a></p>
-<h2 id="7-Ghost搭建博客"><a href="#7-Ghost搭建博客" class="headerlink" title="7.Ghost搭建博客"></a><strong>7.Ghost搭建博客</strong></h2><p><a href="https://ghost.org/docs/" target="_blank" rel="noopener">Ghost官方文档</a></p>
-<p><a href="https://www.bilibili.com/video/av6498530/" target="_blank" rel="noopener">Ghost搭建个人博客视频教程</a></p>
-<h2 id="8-VuePress搭建个人博客"><a href="#8-VuePress搭建个人博客" class="headerlink" title="8.VuePress搭建个人博客"></a><strong>8.VuePress搭建个人博客</strong></h2><p><a href="https://www.vuepress.cn/guide/" target="_blank" rel="noopener">VuePress中文文档</a></p>
-<p><a href="https://www.bilibili.com/video/av75219827/" target="_blank" rel="noopener">VuePress搭建个人博客</a></p>
-<h2 id="9-docsify搭建个人文档"><a href="#9-docsify搭建个人文档" class="headerlink" title="9.docsify搭建个人文档"></a><strong>9.docsify搭建个人文档</strong></h2><p><a href="https://docsify.js.org/#/" target="_blank" rel="noopener">docsify官方文档</a></p>
+<p><span class="external-link"><a href="https://www.typechodev.com/docs/zh_CN/" target="_blank" rel="noopener">typecho文档</a><i class="fa fa-external-link"></i></span></p>
+<p><span class="external-link"><a href="https://www.bilibili.com/video/av58051427/" target="_blank" rel="noopener">typecho搭建自己博客网站视频</a><i class="fa fa-external-link"></i></span></p>
+<p><span class="external-link"><a href="https://www.bilibili.com/video/av59230340/" target="_blank" rel="noopener">使用typecho搭建个人博客视频</a><i class="fa fa-external-link"></i></span></p>
+<h2 id="3-使用Hugo搭建个人博客"><span class="heading-link">3.使用Hugo搭建个人博客</span></h2><p>详细介绍请参照Hugo文档：</p>
+<p><span class="external-link"><a href="https://www.gohugo.org/doc/" target="_blank" rel="noopener">Hugo中文文档</a><i class="fa fa-external-link"></i></span></p>
+<p><span class="external-link"><a href="https://www.bilibili.com/video/av49116509/" target="_blank" rel="noopener">Hugo博客搭建视频教程</a><i class="fa fa-external-link"></i></span></p>
+<p><span class="external-link"><a href="https://www.bilibili.com/video/av62786612/" target="_blank" rel="noopener">使用Hugo搭建个人博客</a><i class="fa fa-external-link"></i></span></p>
+<h2 id="4-Hexo-GitHub搭建博客"><span class="heading-link">4.Hexo+GitHub搭建博客</span></h2><p><span class="external-link"><a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener">Hexo官方文档</a><i class="fa fa-external-link"></i></span></p>
+<p><span class="external-link"><a href="https://www.bilibili.com/video/av24897960?p=3" target="_blank" rel="noopener">Hexo视频教程</a><i class="fa fa-external-link"></i></span></p>
+<p><span class="external-link"><a href="https://blog.csdn.net/qq_36759224/article/details/82121420" target="_blank" rel="noopener">ShanSan的好友TRHX的手把手小白教程</a><i class="fa fa-external-link"></i></span></p>
+<h2 id="5-Jekyll搭建个人博客"><span class="heading-link">5.Jekyll搭建个人博客</span></h2><p><span class="external-link"><a href="https://jekyllcn.com/docs/home/" target="_blank" rel="noopener">Jekyll文档</a><i class="fa fa-external-link"></i></span></p>
+<p><span class="external-link"><a href="https://www.bilibili.com/video/av13994132/" target="_blank" rel="noopener">Jekyll搭建个人博客视频教程</a><i class="fa fa-external-link"></i></span></p>
+<h2 id="6-GitBook"><span class="heading-link">6.GitBook</span></h2><p><span class="external-link"><a href="https://chrisniael.gitbooks.io/gitbook-documentation/content/index.html" target="_blank" rel="noopener">GitBook文档</a><i class="fa fa-external-link"></i></span></p>
+<p><span class="external-link"><a href="https://www.bilibili.com/video/av53704955/" target="_blank" rel="noopener">GitBook视频</a><i class="fa fa-external-link"></i></span></p>
+<h2 id="7-Ghost搭建博客"><span class="heading-link">7.Ghost搭建博客</span></h2><p><span class="external-link"><a href="https://ghost.org/docs/" target="_blank" rel="noopener">Ghost官方文档</a><i class="fa fa-external-link"></i></span></p>
+<p><span class="external-link"><a href="https://www.bilibili.com/video/av6498530/" target="_blank" rel="noopener">Ghost搭建个人博客视频教程</a><i class="fa fa-external-link"></i></span></p>
+<h2 id="8-VuePress搭建个人博客"><span class="heading-link">8.VuePress搭建个人博客</span></h2><p><span class="external-link"><a href="https://www.vuepress.cn/guide/" target="_blank" rel="noopener">VuePress中文文档</a><i class="fa fa-external-link"></i></span></p>
+<p><span class="external-link"><a href="https://www.bilibili.com/video/av75219827/" target="_blank" rel="noopener">VuePress搭建个人博客</a><i class="fa fa-external-link"></i></span></p>
+<h2 id="9-docsify搭建个人文档"><span class="heading-link">9.docsify搭建个人文档</span></h2><p><span class="external-link"><a href="https://docsify.js.org/#/" target="_blank" rel="noopener">docsify官方文档</a><i class="fa fa-external-link"></i></span></p>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -223,8 +223,8 @@
     <url>/2020/01/02/2019%E5%B9%B4%E8%87%AA%E6%88%91%E6%80%BB%E7%BB%93/</url>
     <content><![CDATA[<p><img src="https://s2.ax1x.com/2020/01/08/l236k8.jpg" alt="你好，2020"></p>
 <a id="more"></a>
-<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>时间过得很快，转眼间已经大二了，这个学期只有短短的十八周时间，使我一直忙碌与各种考试，各种课程，对自己所想学的东西一直止步与初学的状态，并且很多计划都没有得到实施。所以2019年让我感到很惭愧。现在2020年已经悄悄的来到，我开始更新了计划，希望在新的一年我的计划能够实施，不会有太多变数。<img src="https://s2.ax1x.com/2020/01/08/l23bhF.png" alt="在这里插入图片描述"></p>
-<h2 id="总结2019"><a href="#总结2019" class="headerlink" title="总结2019"></a>总结2019</h2><p>在2019年了我开始接触了前端相关的内容，开始了更有方向更有目标的学习。但是回过头来想想自己还是一如既往得菜，感觉没有学什么。也许我就是所谓的行动上的弱者吧（惭愧惭愧）。在学习过程中发现自己也有很多不足之处：</p>
+<h2 id="前言"><span class="heading-link">前言</span></h2><p>时间过得很快，转眼间已经大二了，这个学期只有短短的十八周时间，使我一直忙碌与各种考试，各种课程，对自己所想学的东西一直止步与初学的状态，并且很多计划都没有得到实施。所以2019年让我感到很惭愧。现在2020年已经悄悄的来到，我开始更新了计划，希望在新的一年我的计划能够实施，不会有太多变数。<img src="https://s2.ax1x.com/2020/01/08/l23bhF.png" alt="在这里插入图片描述"></p>
+<h2 id="总结2019"><span class="heading-link">总结2019</span></h2><p>在2019年了我开始接触了前端相关的内容，开始了更有方向更有目标的学习。但是回过头来想想自己还是一如既往得菜，感觉没有学什么。也许我就是所谓的行动上的弱者吧（惭愧惭愧）。在学习过程中发现自己也有很多不足之处：</p>
 <ol>
 <li>对于某个方面的知识大多数只是看看理论部分，忽视了行动上的操作（动手敲)。</li>
 <li>会一种不学完某方面知识，就不进入下一阶段的学习，所以导致接触的很少，学得也很浅。</li>
@@ -232,7 +232,7 @@
 <li>做事情有时会漫无目的，接触的东西也就零零散散。</li>
 </ol>
 <p>现实就是这样残酷不进则退，若不不去学习，尝试，自己就永远是在退步。 </p>
-<h2 id="2020新年新期望"><a href="#2020新年新期望" class="headerlink" title="2020新年新期望"></a>2020新年新期望</h2><p>2020年的钟声已经敲响，希望在新的一年里，也寄托了新的期望:</p>
+<h2 id="2020新年新期望"><span class="heading-link">2020新年新期望</span></h2><p>2020年的钟声已经敲响，希望在新的一年里，也寄托了新的期望:</p>
 <ul>
 <li><p>能够把计划都实现吧！！</p>
 </li>
@@ -244,7 +244,7 @@
 <p>最后借亲爱的习大大新年贺词，送自己一句话：</p>
 </li>
 </ul>
-<h2 id="只争朝夕，不负韶华"><a href="#只争朝夕，不负韶华" class="headerlink" title="只争朝夕，不负韶华"></a><strong><em>只争朝夕，不负韶华</em></strong></h2><script>
+<h2 id="只争朝夕，不负韶华"><span class="heading-link">只争朝夕，不负韶华</span></h2><script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
             if (!el.dataset.src) { return; }
@@ -275,21 +275,21 @@
     <url>/2019/11/18/%E6%9C%AC%E5%9C%B0%E9%A1%B9%E7%9B%AE%E6%8E%A8%E9%80%81%E5%88%B0github/</url>
     <content><![CDATA[<p>﻿# 将本地项目推送到github</p>
 <hr>
-<h2 id="方法一：-使用ssh将本地项目推送到GitHub"><a href="#方法一：-使用ssh将本地项目推送到GitHub" class="headerlink" title="方法一： 使用ssh将本地项目推送到GitHub"></a>方法一： 使用ssh将本地项目推送到GitHub</h2><h6 id="补充：1-先在GitHub中新建一个repository，我新建的是名为TEST的-respository"><a href="#补充：1-先在GitHub中新建一个repository，我新建的是名为TEST的-respository" class="headerlink" title="补充：1.先在GitHub中新建一个repository，我新建的是名为TEST的 respository"></a>补充：1.先在GitHub中新建一个repository，我新建的是名为TEST的 respository</h6><a id="more"></a>
+<h2 id="方法一：-使用ssh将本地项目推送到GitHub"><span class="heading-link">方法一： 使用ssh将本地项目推送到GitHub</span></h2><h6 id="补充：1-先在GitHub中新建一个repository，我新建的是名为TEST的-respository"><span class="heading-link">补充：1.先在GitHub中新建一个repository，我新建的是名为TEST的 respository</span></h6><a id="more"></a>
 <p><img src="https://img-blog.csdnimg.cn/20191117111038216.png" alt="在这里插入图片描述"></p>
-<h6 id="2-新建完成后如图所示点击add-deploy-key"><a href="#2-新建完成后如图所示点击add-deploy-key" class="headerlink" title="2.新建完成后如图所示点击add deploy key"></a>2.新建完成后如图所示点击add deploy key</h6><p><img src="https://img-blog.csdnimg.cn/20191117111629133.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDA4OTI1OQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20191117112055459.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDA4OTI1OQ==,size_16,color_FFFFFF,t_70" alt=""></p>
+<h6 id="2-新建完成后如图所示点击add-deploy-key"><span class="heading-link">2.新建完成后如图所示点击add deploy key</span></h6><p><img src="https://img-blog.csdnimg.cn/20191117111629133.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDA4OTI1OQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20191117112055459.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDA4OTI1OQ==,size_16,color_FFFFFF,t_70" alt=""></p>
 <hr>
-<h3 id="1-首先生成ssh密钥"><a href="#1-首先生成ssh密钥" class="headerlink" title="1.首先生成ssh密钥"></a>1.首先生成ssh密钥</h3><figure class="highlight plain"><table><tbody><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -C "your email"</span><br></pre></td></tr></tbody></table></figure>
+<h3 id="1-首先生成ssh密钥"><span class="heading-link">1.首先生成ssh密钥</span></h3><figure class="highlight plain"><div class="table-container"><table><tbody><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -C "your email"</span><br></pre></td></tr></tbody></table></div></figure>
 
 <p><img src="https://img-blog.csdnimg.cn/20191117105949398.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDA4OTI1OQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片方描述"><br><em>以上三个地方按回车即可；</em></p>
-<h3 id="2-找到生成的-ssh文件夹，复制id-rsa-pub，一般是位于用户目录下的-ssh目录中-把复制好的id-rsa-pub粘贴到下图的key中，Title可随意描述，最后add-key"><a href="#2-找到生成的-ssh文件夹，复制id-rsa-pub，一般是位于用户目录下的-ssh目录中-把复制好的id-rsa-pub粘贴到下图的key中，Title可随意描述，最后add-key" class="headerlink" title="2.找到生成的.ssh文件夹，复制id_rsa.pub，一般是位于用户目录下的.ssh目录中,把复制好的id-rsa.pub粘贴到下图的key中，Title可随意描述，最后add key"></a>2.找到生成的.ssh文件夹，复制id_rsa.pub，一般是位于用户目录下的.ssh目录中,把复制好的id-rsa.pub粘贴到下图的key中，Title可随意描述，最后add key</h3><p><img src="https://img-blog.csdnimg.cn/20191117110646242.png" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20191117112155216.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDA4OTI1OQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<h3 id="3-检查能否成功通讯ssh-T-git-github-com"><a href="#3-检查能否成功通讯ssh-T-git-github-com" class="headerlink" title="3.检查能否成功通讯ssh -T git@github.com"></a>3.检查能否成功通讯<code>ssh -T git@github.com</code></h3><figure class="highlight plain"><table><tbody><tr><td class="code"><pre><span class="line">cd ~/.ssh    </span><br><span class="line"># 检查下自己之前有没有已经生成.ssh</span><br></pre></td></tr></tbody></table></figure>
+<h3 id="2-找到生成的-ssh文件夹，复制id-rsa-pub，一般是位于用户目录下的-ssh目录中-把复制好的id-rsa-pub粘贴到下图的key中，Title可随意描述，最后add-key"><span class="heading-link">2.找到生成的.ssh文件夹，复制id_rsa.pub，一般是位于用户目录下的.ssh目录中,把复制好的id-rsa.pub粘贴到下图的key中，Title可随意描述，最后add key</span></h3><p><img src="https://img-blog.csdnimg.cn/20191117110646242.png" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20191117112155216.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDA4OTI1OQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h3 id="3-检查能否成功通讯ssh-T-git-github-com"><span class="heading-link">3.检查能否成功通讯ssh -T git@github.com</span></h3><figure class="highlight plain"><div class="table-container"><table><tbody><tr><td class="code"><pre><span class="line">cd ~/.ssh    </span><br><span class="line"># 检查下自己之前有没有已经生成.ssh</span><br></pre></td></tr></tbody></table></div></figure>
 
-<p><img src="https://img-blog.csdnimg.cn/20191117114208498.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDA4OTI1OQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br> 如果能进入到.ssh文件目录下 ，则证明，之前生成过.ssh秘钥，可以直接使用里面的秘钥。 如果不能进入到.ssh文件目录下，则： 检测下自己之前有没有配置：<br>git config –global user.name ‘xxxxx’<br>git config –global user.email ‘<a href="mailto:xxx@xx.xxx" target="_blank" rel="noopener">xxx@xx.xxx</a>’</p>
-<h3 id="4-推送本地文件到GitHub"><a href="#4-推送本地文件到GitHub" class="headerlink" title="4.推送本地文件到GitHub"></a>4.推送本地文件到GitHub</h3><p><em>注意：要在推送文件的根目录下 ’git bash here‘</em><br><img src="https://img-blog.csdnimg.cn/2019111712002082.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDA4OTI1OQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<h3 id="5-上传完成"><a href="#5-上传完成" class="headerlink" title="5.上传完成"></a>5.上传完成</h3><p>   <img src="https://img-blog.csdnimg.cn/20191117120518557.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDA4OTI1OQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<h2 id="方法二：使用https推送"><a href="#方法二：使用https推送" class="headerlink" title="方法二：使用https推送"></a>方法二：使用https推送</h2><h3 id="1-创建一个仓库"><a href="#1-创建一个仓库" class="headerlink" title="1.创建一个仓库"></a>1.创建一个仓库</h3><p><img src="https://img-blog.csdnimg.cn/2019111712130149.png" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/201911171215027.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDA4OTI1OQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>创建成功后显示如下信息：<img src="https://img-blog.csdnimg.cn/20191117121744371.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDA4OTI1OQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>以上信息告诉我们可以从这个仓库克隆出新的仓库，也可以把本地仓库的内容推送到GitHub仓库。<br>现在，我们根据 GitHub 的提示，在本地的仓库下运行命令：</p>
-<p><img src="https://img-blog.csdnimg.cn/20191117122812345.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDA4OTI1OQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>详细参见<br><a href="https://www.runoob.com/git/git-remote-repo.html" target="_blank" rel="noopener">Git 远程仓库(Github)</a><br><a href="https://shan333.cn/2019/03/08/%E5%B0%86%E6%9C%AC%E5%9C%B0%E9%A1%B9%E7%9B%AE%E6%8E%A8%E9%80%81%E5%88%B0GitHub%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93/" target="_blank" rel="noopener">如何将本地项目推送到Github</a></p>
+<p><img src="https://img-blog.csdnimg.cn/20191117114208498.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDA4OTI1OQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br> 如果能进入到.ssh文件目录下 ，则证明，之前生成过.ssh秘钥，可以直接使用里面的秘钥。 如果不能进入到.ssh文件目录下，则： 检测下自己之前有没有配置：<br>git config –global user.name ‘xxxxx’<br>git config –global user.email ‘<span class="external-link"><a href="mailto:xxx@xx.xxx" target="_blank" rel="noopener">xxx@xx.xxx</a><i class="fa fa-external-link"></i></span>’</p>
+<h3 id="4-推送本地文件到GitHub"><span class="heading-link">4.推送本地文件到GitHub</span></h3><p><em>注意：要在推送文件的根目录下 ’git bash here‘</em><br><img src="https://img-blog.csdnimg.cn/2019111712002082.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDA4OTI1OQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h3 id="5-上传完成"><span class="heading-link">5.上传完成</span></h3><p>   <img src="https://img-blog.csdnimg.cn/20191117120518557.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDA4OTI1OQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h2 id="方法二：使用https推送"><span class="heading-link">方法二：使用https推送</span></h2><h3 id="1-创建一个仓库"><span class="heading-link">1.创建一个仓库</span></h3><p><img src="https://img-blog.csdnimg.cn/2019111712130149.png" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/201911171215027.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDA4OTI1OQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>创建成功后显示如下信息：<img src="https://img-blog.csdnimg.cn/20191117121744371.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDA4OTI1OQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>以上信息告诉我们可以从这个仓库克隆出新的仓库，也可以把本地仓库的内容推送到GitHub仓库。<br>现在，我们根据 GitHub 的提示，在本地的仓库下运行命令：</p>
+<p><img src="https://img-blog.csdnimg.cn/20191117122812345.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDA4OTI1OQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>详细参见<br><span class="external-link"><a href="https://www.runoob.com/git/git-remote-repo.html" target="_blank" rel="noopener">Git 远程仓库(Github)</a><i class="fa fa-external-link"></i></span><br><span class="external-link"><a href="https://shan333.cn/2019/03/08/%E5%B0%86%E6%9C%AC%E5%9C%B0%E9%A1%B9%E7%9B%AE%E6%8E%A8%E9%80%81%E5%88%B0GitHub%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93/" target="_blank" rel="noopener">如何将本地项目推送到Github</a><i class="fa fa-external-link"></i></span></p>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -319,22 +319,22 @@
   <entry>
     <title>笔记记录-浮动</title>
     <url>/2019/11/18/%E7%AC%94%E8%AE%B0%E8%AE%B0%E5%BD%95-%E6%B5%AE%E5%8A%A8/</url>
-    <content><![CDATA[<h3 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h3><p> 浮动:通常无法左右排列，则设置了浮动的元素会往左或者右移动，直到遇到另一个元素或者外边距</p>
-<figure class="highlight plain"><table><tbody><tr><td class="code"><pre><span class="line">float:left/right;</span><br></pre></td></tr></tbody></table></figure>
+    <content><![CDATA[<h3 id="定义"><span class="heading-link">定义</span></h3><p> 浮动:通常无法左右排列，则设置了浮动的元素会往左或者右移动，直到遇到另一个元素或者外边距</p>
+<figure class="highlight plain"><div class="table-container"><table><tbody><tr><td class="code"><pre><span class="line">float:left/right;</span><br></pre></td></tr></tbody></table></div></figure>
 
-<h6 id="高度塌陷问题"><a href="#高度塌陷问题" class="headerlink" title="高度塌陷问题"></a>高度塌陷问题</h6><p>子元素书写浮动属性后，父元素会产生高度塌陷的问题，也就是福原属高度为0的现象。</p>
+<h6 id="高度塌陷问题"><span class="heading-link">高度塌陷问题</span></h6><p>子元素书写浮动属性后，父元素会产生高度塌陷的问题，也就是福原属高度为0的现象。</p>
 <a id="more"></a>
-<h6 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h6><p>1、直接书写父元素高度—–必须是模块高度不会改变的情况下（不提倡）<br>2、给父元素书写溢出隐藏属性:（经常）</p>
-<figure class="highlight plain"><table><tbody><tr><td class="code"><pre><span class="line">overflow: hidden</span><br></pre></td></tr></tbody></table></figure>
+<h6 id="解决方法"><span class="heading-link">解决方法</span></h6><p>1、直接书写父元素高度—–必须是模块高度不会改变的情况下（不提倡）<br>2、给父元素书写溢出隐藏属性:（经常）</p>
+<figure class="highlight plain"><div class="table-container"><table><tbody><tr><td class="code"><pre><span class="line">overflow: hidden</span><br></pre></td></tr></tbody></table></div></figure>
 
 <p>3、在最后一个书写浮动属性的子元素下写个空的div标签，然后给他添加一个行内样式 <strong>clear: both</strong></p>
-<figure class="highlight plain"><table><tbody><tr><td class="code"><pre><span class="line">&lt;div style = "clear:both" &gt; &lt;/div&gt;</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight plain"><div class="table-container"><table><tbody><tr><td class="code"><pre><span class="line">&lt;div style = "clear:both" &gt; &lt;/div&gt;</span><br></pre></td></tr></tbody></table></div></figure>
 
 <p>4、（在第二种无法解决问题情况下）<br>eg:在body中书写</p>
-<figure class="highlight plain"><table><tbody><tr><td class="code"><pre><span class="line">&lt;ul class ="clearfix"&gt;</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight plain"><div class="table-container"><table><tbody><tr><td class="code"><pre><span class="line">&lt;ul class ="clearfix"&gt;</span><br></pre></td></tr></tbody></table></div></figure>
 
 <p>在css中设置：</p>
-<figure class="highlight plain"><table><tbody><tr><td class="code"><pre><span class="line">.clearfix :before{</span><br><span class="line">display: block;</span><br><span class="line">content: "";</span><br><span class="line">font-size: 0px;</span><br><span class="line">clear: both;</span><br><span class="line">overflow: hidden;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight plain"><div class="table-container"><table><tbody><tr><td class="code"><pre><span class="line">.clearfix :before{</span><br><span class="line">display: block;</span><br><span class="line">content: "";</span><br><span class="line">font-size: 0px;</span><br><span class="line">clear: both;</span><br><span class="line">overflow: hidden;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></div></figure>
 
 <script>
         document.querySelectorAll('.github-emoji')
