@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.lvshaomei.club/"/>
-  <updated>2020-06-14T05:44:15.976Z</updated>
+  <updated>2020-10-12T01:28:19.909Z</updated>
   <id>http://www.lvshaomei.club/</id>
   
   <author>
@@ -15,6 +15,52 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>web前端全栈开发（JS）</title>
+    <link href="http://www.lvshaomei.club/2020/10/11/JS%E7%AC%94%E8%AE%B0/"/>
+    <id>http://www.lvshaomei.club/2020/10/11/JS%E7%AC%94%E8%AE%B0/</id>
+    <published>2020-10-11T14:27:03.000Z</published>
+    <updated>2020-10-12T01:28:19.909Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;第一章-数据类型&quot;&gt;&lt;span class=&quot;heading-link&quot;&gt;第一章  数据类型&lt;/span&gt;&lt;/h2&gt;&lt;h3 id=&quot;前言&quot;&gt;&lt;span
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>JS笔记</title>
+    <link href="http://www.lvshaomei.club/2020/10/11/web%E5%89%8D%E7%AB%AF%E5%85%A8%E6%A0%88%E5%BC%80%E5%8F%91%EF%BC%88JS%EF%BC%89/"/>
+    <id>http://www.lvshaomei.club/2020/10/11/web%E5%89%8D%E7%AB%AF%E5%85%A8%E6%A0%88%E5%BC%80%E5%8F%91%EF%BC%88JS%EF%BC%89/</id>
+    <published>2020-10-11T14:27:03.000Z</published>
+    <updated>2020-10-12T01:42:07.296Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;第一章-数据类型&quot;&gt;&lt;span class=&quot;heading-link&quot;&gt;第一章  数据类型&lt;/span&gt;&lt;/h2&gt;&lt;h3 id=&quot;前言&quot;&gt;&lt;span
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>git常见命令的使用</title>

@@ -1,0 +1,642 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><meta name="keywords" content="LSM, lvlv's blog"><meta name="description" content="生活总是需要不断的跌倒，再不断的爬起来，这就是生活。"><title>web前端全栈开发（JS） | lvlv's blog</title><meta name="google-site-verification" content="HPcpCEPE_TQ7LlH-LAToYJleDQ7ydr0Mgiw95TQ5GNQ"><meta name="msvalidate.01" content="9C903B945C2FE1FB1A111163F0C32703"><meta name="theme-color" content="#54bcff"><link rel="manifest" href="../../../../manifest.json?v=1.5.4"><link rel="icon" href="../../../../images/icons/Lv-16.png?v=1.5.4" type="image/png" sizes="16x16"><link rel="icon" href="../../../../images/icons/Lv-32.png?v=1.5.4" type="image/png" sizes="32x32"><link rel="alternate" href="../../../../atom.xml" type="application/atom+xml"><link rel="dns-prefetch" href="https://cdn.jsdelivr.net"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" type="text/css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.css" type="text/css"><link rel="stylesheet" href="../../../../css/index.css?v=1.5.4"><link rel="dns-prefetch" href="https://www.googletagmanager.com"><link rel="dns-prefetch" href="https://hm.baidu.com"><link rel="dns-prefetch" href="https://tajs.qq.com"><script src="https://www.googletagmanager.com/gtag/js?id=UA-156048106-1" async=""></script><script>if (window.location.hostname !== 'localhost') {
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){ dataLayer.push(arguments); }
+  gtag('js', new Date());
+  gtag('config', 'UA-156048106-1');
+}</script><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement('script');
+  hm.src = 'https://hm.baidu.com/hm.js?3df607e8ce8da7ad737b9205f02966ee';
+  hm.async = true;
+
+  if (false) { hm.setAttribute('data-pjax', ''); }
+
+  var s = document.getElementsByTagName('script')[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();</script><script>(function() {
+  var hm = document.createElement('script');
+  hm.src = 'https://tajs.qq.com/stats?sId=undefined';
+  hm.async = true;
+
+  if (false) { hm.setAttribute('data-pjax', ''); }
+
+  var s = document.getElementsByTagName('script')[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();</script><script>var Stun = window.Stun || {};
+var CONFIG = {
+  root: '/',
+  algolia: undefined,
+  fontawesome: {"prefix":"fa"},
+  sidebar: {"offsetTop":"30px","renderTocDepth":4},
+  header: {"scrollDownIcon":true},
+  back2top: {"enable":true},
+  reward: false,
+  fancybox: false,
+  zoom_image: {"enable":true,"mask_color":"rgba(0,0,0,0.6)"},
+  gallery_waterfall: undefined,
+  lazyload: undefined,
+  pjax: undefined,
+  external_link: {"icon":{"enable":true,"name":"external-link"}},
+  shortcuts: {"switch_post":false},
+  prompt: {"copy_success":"复制成功","copy_error":"复制失败","creative_commons":"知识共享","copy_button":"点击复制"}
+};
+
+window.CONFIG = CONFIG;</script></head><body><div class="container" id="container"><header class="header" id="header"><div class="header-inner"><nav class="header-nav"><div class="header-nav-inner"><div class="header-nav-btn fa fa-bars"></div><div class="header-nav-menu"><div class="header-nav-menu-item"><a class="header-nav-menu-item__a" href="/"><i class="fa fa-home"></i>首页</a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__a" href="javascript:;" target="_blank" rel="noopener"><i class="fa fa-paint-brush"></i>文章</a><div class="header-nav-submenu"><div class="header-nav-menu-item"><a class="header-nav-menu-item__a" href="/archives/"><i class="fa fa-folder-open"></i>归档</a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__a" href="/categories/"><i class="fa fa-th"></i>分类</a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__a" href="/tags/"><i class="fa fa-tags"></i>标签</a></div></div></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__a" href="/about/"><i class="fa fa-user"></i>关于</a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__a" href="/friends/"><i class="fa fa-hand-spock-o"></i>友链</a></div></div><div class="header-nav-search"><i class="fa fa-search"></i><span>搜索</span></div></div></nav><div class="header-info"><div class="header-info-inner"><div class="header-info-title">lvlv's blog</div><div class="header-info-subtitle">留意身边的美好</div></div><div class="header-info-scrolldown"><i class="fa fa-angle-down header-info-scrolldown__icon"></i></div></div></div></header><main class="main" id="main"><div class="main-inner"><div class="content-wrap" id="content-wrap"><div class="content"><div class="post"><header class="post-header"><h1 class="post-header-title">web前端全栈开发（JS）</h1><div class="post-header-meta"><span class="post-header-meta-create"><i class="fa fa-calendar-o"></i><span>发表于 </span><span>2020-10-11</span></span><span class="post-header-meta-update"><i class="fa fa-calendar-check-o"></i><span>更新于 </span><span>2020-10-12</span></span><span class="post-header-meta-word-count"><i class="fa fa-file-word-o"></i><span>字数统计 </span><span>1k</span></span><span class="post-header-meta-reading-time"><i class="fa fa-clock-o"></i><span>阅读时长 </span><span>5m</span></span><span class="post-header-meta-reading-count"><i class="fa fa-eye"></i><span>阅读次数 </span><span id="busuanzi_value_page_pv"></span></span></div></header><div class="post-body"><h2 id="第一章-数据类型"><span class="heading-link">第一章  数据类型</span></h2><h3 id="前言"><span class="heading-link">前言</span></h3><p>在学习的过程中，发现做笔记还是很重要的，同时笔记的格式也是十分重要的，一个潦草而无序的笔记只会让人看了更头疼。暑假屯下来的笔记终于有时间发出来了，当然后面还会有几篇笔记发出来。加油吧，奥里给！！！</p>
+<hr>
+<!-- -->
+
+<h3 id="基本定义"><span class="heading-link">基本定义</span></h3><!-- -->
+
+<ol>
+<li><strong>编程</strong></li>
+</ol>
+<blockquote>
+<p><img src="https://s1.ax1x.com/2020/10/12/02VwDI.jpg" alt=""></p>
+</blockquote>
+<p> 2.<strong>计算机语言</strong></p>
+<blockquote>
+<p><img src="https://s1.ax1x.com/2020/10/12/02VdKA.jpg" alt=""></p>
+</blockquote>
+<ol start="3">
+<li><strong>编程语言</strong></li>
+</ol>
+<blockquote>
+<p><img src="https://s1.ax1x.com/2020/10/12/02V0bt.jpg" alt=""></p>
+</blockquote>
+<ol start="4">
+<li><strong>翻译器</strong></li>
+</ol>
+<blockquote>
+<p><img src="https://s1.ax1x.com/2020/10/12/02VUvd.jpg" alt=""></p>
+</blockquote>
+<ol start="5">
+<li><strong>编程语言和标记语言的区别</strong></li>
+</ol>
+<blockquote>
+<p><img src="https://s1.ax1x.com/2020/10/12/02VNgH.jpg" alt=""></p>
+</blockquote>
+<ol start="6">
+<li><strong>总结</strong></li>
+</ol>
+<blockquote>
+<p><img src="https://s1.ax1x.com/2020/10/12/02VrUf.png" alt=""></p>
+</blockquote>
+<h3 id="计算机基础"><span class="heading-link">计算机基础</span></h3><hr>
+<blockquote>
+<p><img src="https://s1.ax1x.com/2020/10/12/02VDVP.jpg" alt=""></p>
+</blockquote>
+<p><img src="https://s1.ax1x.com/2020/10/12/02Vs58.jpg" alt=""></p>
+<p>软件运行在硬件中</p>
+<ol start="7">
+<li><strong>数据存储</strong></li>
+</ol>
+<blockquote>
+<p><img src="https://s1.ax1x.com/2020/10/12/02V6PS.jpg" alt=""></p>
+</blockquote>
+<ol start="8">
+<li><strong>数据存储单位</strong></li>
+</ol>
+<blockquote>
+<p><img src="https://s1.ax1x.com/2020/10/12/02Vc8g.png" alt=""></p>
+</blockquote>
+<ol start="9">
+<li><strong>程序运行</strong></li>
+</ol>
+<blockquote>
+<p><img src="https://s1.ax1x.com/2020/10/12/02Vg2Q.jpg" alt=""></p>
+</blockquote>
+<h3 id="JS的基本知识"><span class="heading-link">JS的基本知识</span></h3><hr>
+<ol>
+<li><p>js是一门高级的编程语言，而计算机只识别机器语言，中间需要JS引擎解释为机器语言。</p>
+</li>
+<li><p>脚本：逐行解析执行</p>
+</li>
+<li><p>浏览器分为渲染引擎和JS引擎</p>
+</li>
+</ol>
+<ul>
+<li><p><strong>渲染引擎</strong>：用来解析HTML和CSS，俗称内核，比如说chrome浏览器的blink。老版本webkit</p>
+</li>
+<li><p><strong>JS引擎：也称JS解析器，用来读取网页的JavaScript代码，对其处理后运行，比如chrome浏览器的V8</strong></p>
+</li>
+</ul>
+<p><strong><code>注意：浏览器本身不会执行js代码，而是通过内置的JavaScript引擎（解析器）来执行JS代码，JS引擎执行代码逐行解释每一句源码（转换为机器语言），然后由计算机去执行，所以JavaScript语言归为脚本语言，逐行解释执行。</code></strong></p>
+<ol start="4">
+<li><strong>JS的组成</strong>：JavaScript由ECMAScript（JavaScript语法）、DOM（页面文档对象模型）、BOM（浏览器对象模型）</li>
+</ol>
+<blockquote>
+<ul>
+<li><p><strong>ECMAScript</strong>可以简单的说成是JavaScript，ECMAScript规定了JS的编程语法和基础的核心知识，是所有浏览完厂商共同遵守的一套JS语法工业标准。</p>
+</li>
+<li><p><strong>DOM</strong>是W3C组织推荐处理可扩展标记语言的标准编程接口，通过DOM提供的接口可以对页面上的元素进行操作（大小、位置、颜色等）。</p>
+</li>
+<li><p><strong>BOM</strong>可以与浏览器窗口进行互动的对象结构、通过BOM可以操作浏览器窗口，比如说弹出框、控制浏览器跳转、获取分辨率等</p>
+</li>
+</ul>
+</blockquote>
+<ol start="5">
+<li><strong>JS的三种书写位置：</strong></li>
+</ol>
+<ul>
+<li><strong>内嵌式</strong></li>
+</ul>
+<p><img src="https://s1.ax1x.com/2020/10/12/02V2vj.jpg" alt=""></p>
+<ul>
+<li><strong>行内式</strong></li>
+</ul>
+<blockquote>
+<p><img src="https://s1.ax1x.com/2020/10/12/02VWKs.jpg" alt=""></p>
+</blockquote>
+<ul>
+<li><strong>外部式</strong></li>
+</ul>
+<blockquote>
+<p><img src="https://s1.ax1x.com/2020/10/12/02Vfrn.jpg" alt=""></p>
+</blockquote>
+<ol start="6">
+<li><strong>JS注释：</strong></li>
+</ol>
+<blockquote>
+<p><img src="https://s1.ax1x.com/2020/10/12/02Vhbq.jpg" alt=""></p>
+</blockquote>
+<ol start="7">
+<li><strong>JS的输入输出语句：</strong></li>
+</ol>
+<ul>
+<li><p><strong>输入框：</strong> <em>prompt(‘这是一个输入框’);</em></p>
+</li>
+<li><p><strong>弹出警示框：*</strong>alert(‘计算结果是’);*</p>
+</li>
+<li><p><strong>控制台输出：*</strong>console.log(‘这是给程序员看的：’)；*</p>
+</li>
+</ul>
+<p><img src="https://s1.ax1x.com/2020/10/12/02V5V0.jpg" alt=""></p>
+<h3 id="变量"><span class="heading-link">变量</span></h3><hr>
+<ol>
+<li><p>变量就是用于存储数据的<strong>容器</strong>，我们通过变量名获取数据</p>
+</li>
+<li><p>变量的<strong>本质</strong>：变量是程序内存中申请的一块用来存放数据的空间。</p>
+</li>
+<li><p>变量将以最后一个值为准</p>
+</li>
+<li><p><strong>变量名的规范</strong>：</p>
+</li>
+</ol>
+<blockquote>
+<p><img src="https://s1.ax1x.com/2020/10/12/02Vo5T.png" alt=""></p>
+</blockquote>
+<ol start="5">
+<li><strong>变量小结：</strong></li>
+</ol>
+<blockquote>
+<p><img src="https://s1.ax1x.com/2020/10/12/02VIaV.jpg" alt=""></p>
+<h3 id="数据类型"><span class="heading-link">数据类型</span></h3><hr>
+</blockquote>
+<ol>
+<li><p>JavaScript是一种弱类型或者动态语言。即不用提前声明变量的类型，在程序运行过程中会被自动确定。</p>
+</li>
+<li><p>JavaScript拥有动态类型，同时也意味着相同的变量可以用作不同的类型。</p>
+</li>
+</ol>
+<blockquote>
+<p><img src="https://s1.ax1x.com/2020/10/12/02V7PU.jpg" alt=""></p>
+</blockquote>
+<ol start="3">
+<li><strong>简单数据类型：</strong></li>
+</ol>
+<blockquote>
+<p><img src="https://s1.ax1x.com/2020/10/12/02VHGF.jpg" alt=""></p>
+<p>Js中八进制前面加0，十六进制前面加0x</p>
+</blockquote>
+<p><em>A.  *</em>Number 数字型***</p>
+<ul>
+<li><strong>Js中的最大最小值：</strong></li>
+</ul>
+<p><img src="https://s1.ax1x.com/2020/10/12/02Vb24.jpg" alt=""></p>
+<ul>
+<li><strong>数字型的三个特殊值：</strong></li>
+</ul>
+<blockquote>
+<p><img src="https://s1.ax1x.com/2020/10/12/02VqxJ.jpg" alt=""></p>
+</blockquote>
+<ul>
+<li><strong>isNaN()</strong></li>
+</ul>
+<blockquote>
+<p><img src="https://s1.ax1x.com/2020/10/12/02VOM9.jpg" alt=""></p>
+</blockquote>
+<p><em>B. *</em>字符串型String***</p>
+<blockquote>
+<p><img src="https://s1.ax1x.com/2020/10/12/02VXrR.jpg" alt=""></p>
+</blockquote>
+<ul>
+<li><strong>字符串嵌套</strong></li>
+</ul>
+<blockquote>
+<p><img src="https://s1.ax1x.com/2020/10/12/02Vjq1.jpg" alt=""></p>
+</blockquote>
+<ul>
+<li><strong>字符串转义符</strong></li>
+</ul>
+<blockquote>
+<p><img src="https://s1.ax1x.com/2020/10/12/02VxVx.jpg" alt=""></p>
+</blockquote>
+<ul>
+<li><strong>字符串长度</strong></li>
+</ul>
+<blockquote>
+<p><img src="https://s1.ax1x.com/2020/10/12/02Vza6.jpg" alt=""></p>
+</blockquote>
+<ul>
+<li><strong>字符串拼接（用’+’连接）</strong></li>
+</ul>
+<blockquote>
+<p><img src="https://s1.ax1x.com/2020/10/12/02ZSIK.jpg" alt=""></p>
+</blockquote>
+<ul>
+<li><strong>字符串拼接加强</strong></li>
+</ul>
+<blockquote>
+<p><img src="https://s1.ax1x.com/2020/10/12/02Z9PO.jpg" alt=""></p>
+</blockquote>
+<p><em>C.  *</em>布尔型 Boolean***</p>
+<blockquote>
+<p><img src="https://s1.ax1x.com/2020/10/12/02ZCGD.jpg" alt=""></p>
+</blockquote>
+<p>D.  <strong>Undefined 和Null</strong></p>
+<blockquote>
+<p><img src="https://s1.ax1x.com/2020/10/12/02ZPRe.jpg" alt=""></p>
+</blockquote>
+<ol start="4">
+<li><strong>获取变量数据类型</strong></li>
+</ol>
+<ul>
+<li><p><strong>typeof用来检测变量数据类型</strong></p>
+</li>
+<li><p><strong>通过控制台的颜色来判断属于什么类型</strong></p>
+</li>
+<li><p><strong>字面量</strong></p>
+</li>
+</ul>
+<blockquote>
+<p><img src="https://ftp.bmp.ovh/imgs/2020/10/ce1ea9521050e5e8.jpg" alt=""></p>
+</blockquote>
+<h3 id="数据类型的转换"><span class="heading-link">数据类型的转换</span></h3><hr>
+<ol>
+<li><strong>什么是数据类型的转换</strong></li>
+</ol>
+<blockquote>
+<p><img src="https://ftp.bmp.ovh/imgs/2020/10/77efc66f79836555.jpg" alt=""></p>
+</blockquote>
+<ol start="2">
+<li><strong>转换为字符串类型（加号拼接是重点，其他了解就行）</strong></li>
+</ol>
+<blockquote>
+<p><img src="https://ftp.bmp.ovh/imgs/2020/10/170a92ee7f23d279.jpg" alt=""></p>
+</blockquote>
+<ul>
+<li><strong>转换为数字型（重点）</strong></li>
+</ul>
+<blockquote>
+<p><img src="https://ftp.bmp.ovh/imgs/2020/10/08fa86ec08865b47.jpg" alt=""></p>
+</blockquote>
+<ul>
+<li><strong>转换为布尔型</strong></li>
+</ul>
+<blockquote>
+<p><img src="https://ftp.bmp.ovh/imgs/2020/10/855edcce235ce8f9.jpg" alt=""></p>
+</blockquote>
+<ul>
+<li><strong>拓展1（解释性语言和编译性语言）</strong></li>
+</ul>
+<blockquote>
+<p><img src="https://ftp.bmp.ovh/imgs/2020/10/db04b2030f616c0d.jpg" alt=""></p>
+<p><img src="https://ftp.bmp.ovh/imgs/2020/10/19d933316072f09f.jpg" alt=""></p>
+</blockquote>
+<ul>
+<li><p><strong>拓展2</strong></p>
+</li>
+<li><p><strong>标识符</strong></p>
+</li>
+</ul>
+<blockquote>
+<p><img src="https://ftp.bmp.ovh/imgs/2020/10/4d29c69109cf8d92.jpg" alt=""></p>
+</blockquote>
+<ul>
+<li><strong>关键字</strong></li>
+</ul>
+<blockquote>
+<p><img src="https://ftp.bmp.ovh/imgs/2020/10/455ec336df72495e.jpg" alt=""></p>
+</blockquote>
+<ul>
+<li><strong>保留字</strong></li>
+</ul>
+<blockquote>
+<p><img src="https://ftp.bmp.ovh/imgs/2020/10/0a1ce2263a3431ee.jpg" alt=""></p>
+</blockquote>
+<script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script></div><footer class="post-footer"><div class="post-copyright"><div class="post-copyright-author"><span class="post-copyright-author-name">本文作者: </span><span class="post-copyright-author-value"><a href="http://www.lvshaomei.club">LSM</a></span></div><div class="post-copyright-link"><span class="post-copyright-link-name">本文链接: </span><span class="post-copyright-link-value"><a href="http://www.lvshaomei.club/2020/10/11/JS%E7%AC%94%E8%AE%B0/">http://www.lvshaomei.club/2020/10/11/JS%E7%AC%94%E8%AE%B0/</a></span></div><div class="post-copyright-notice"><span class="post-copyright-notice-name">版权声明: </span><span class="post-copyright-notice-value">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-cn" rel="external nofollow" target="_blank">BY-NC-SA</a> 许可协议。转载请注明出处！</span></div></div><nav class="paginator"><div class="paginator-post"><div class="paginator-post-next"><a class="paginator-post-next__a" href="../web%E5%89%8D%E7%AB%AF%E5%85%A8%E6%A0%88%E5%BC%80%E5%8F%91%EF%BC%88JS%EF%BC%89/"><span>JS笔记</span><i class="fa fa-chevron-right"></i></a></div></div></nav></footer></div></div><div class="comments" id="comments"><div id="gitalk-container"></div></div></div><aside class="sidebar" id="sidebar"><div class="sidebar-inner"><div class="sidebar-nav"><span class="sidebar-nav-toc current">文章目录</span><span class="sidebar-nav-ov">站点概览</span></div><section class="sidebar-toc"><div><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#第一章-数据类型"><span class="toc-number">1.</span> <span class="toc-text">第一章  数据类型</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#前言"><span class="toc-number">1.1.</span> <span class="toc-text">前言</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#基本定义"><span class="toc-number">1.2.</span> <span class="toc-text">基本定义</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#计算机基础"><span class="toc-number">1.3.</span> <span class="toc-text">计算机基础</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#JS的基本知识"><span class="toc-number">1.4.</span> <span class="toc-text">JS的基本知识</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#变量"><span class="toc-number">1.5.</span> <span class="toc-text">变量</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#数据类型"><span class="toc-number">1.6.</span> <span class="toc-text">数据类型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#数据类型的转换"><span class="toc-number">1.7.</span> <span class="toc-text">数据类型的转换</span></a></li></ol></li></ol></div></section><!-- ov = overview --><section class="sidebar-ov hide"><div class="sidebar-ov-author"><div class="sidebar-ov-author__avatar"><img class="sidebar-ov-author__avatar_img" src="/images/banner/labia.jpeg" alt="avatar"></div><p class="sidebar-ov-author__p">The Harder You Work, The Luckier You Will Be.</p></div><div class="sidebar-ov-social"><a class="sidebar-ov-social__item" href="https://github.com/Lvshaomei/Lvshaomei.github.io" target="_blank" rel="noopener" data-popover="Github" data-popover-pos="up"><i class="sidebar-ov-social__item--icon fa fa-github"></i></a><a class="sidebar-ov-social__item" href="https://segmentfault.com/u/lvlv_5e182fd7c6adc" target="_blank" rel="noopener" data-popover="思否" data-popover-pos="up"><span class="sidebar-ov-social__item--logo">sf</span></a><a class="sidebar-ov-social__item" href="https://www.zhihu.com/people/fa-liang-jian-shao/activities" target="_blank" rel="noopener" data-popover="知乎" data-popover-pos="up"><span class="sidebar-ov-social__item--logo">�</span></a><a class="sidebar-ov-social__item" href="https://juejin.im/user/5da86e3d5188257948602ace" target="_blank" rel="noopener" data-popover="social.juejin" data-popover-pos="up"><span class="sidebar-ov-social__item--logo">�</span></a></div><div class="sidebar-ov-feed"><span class="sidebar-ov-feed-rss"><a class="sidebar-ov-feed-rss__a" href="../../../../atom.xml" target="_blank" rel="noopener"><i class="sidebar-ov-feed-rss__a--icon fa fa-rss"></i><span>RSS </span><span>订阅</span></a></span></div><div class="sidebar-ov-state"></div><div class="sidebar-ov-cc"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-cn" target="_blank" rel="noopener" data-popover="知识共享" data-popover-pos="up"><img src="../../../../images/cc-by-nc-sa.svg" alt="知识共享"></a></div></section><div class="sidebar-reading"><div class="sidebar-reading-info"><span>你已阅读了 </span><span class="sidebar-reading-info-num">0</span></div><div class="sidebar-reading-line"></div></div></div></aside><div class="clearfix"></div></div></main><footer class="footer" id="footer"><div class="footer-inner"><div><span>&copy; 2020</span><span class="fa fa-heart footer-icon"></span><span>LSM.</span></div><div><span>由 <a href="http://hexo.io/" title="hexo" target="_blank" rel="noopener">hexo</a> 强力驱动</span><span> v4.0.0.</span><span class="separator">|</span><span>主题 - <a href="https://github.com/liuyib/hexo-theme-stun/" title="stun" target="_blank" rel="noopener">stun</a></span><span> v1.5.4.</span></div><div class="busuanzi"><span class="busuanzi-site_uv"><i class="fa fa-user"></i><span>访问人数 </span><span id="busuanzi_value_site_uv"></span></span><span class="separator">|</span><span class="busuanzi-site_pv"><i class="fa fa-eye"></i><span>浏览总量 </span><span id="busuanzi_value_site_pv"></span></span><script src="https://cdn.jsdelivr.net/gh/sukkaw/busuanzi@latest/bsz.pure.mini.js" async></script></div></div></footer><div class="loading-bar" id="loading-bar"><div class="progress"></div></div><div class="back2top" id="back2top"><i class="back2top-icon fa fa-rocket"></i></div></div><div class="search-mask"></div><div class="search-popup"><span class="search-close"></span><div class="search-input"><input placeholder="搜索文章（支持多关键词，请用空格分隔）"></div><div class="search-results"></div></div><script src="https://cdn.jsdelivr.net/npm/jquery@v3.4.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.ui.min.js"></script><script src="https://cdn.jsdelivr.net/npm/ribbon.js@latest/dist/ribbon.min.js" size="120" alpha="0.6" zIndex="-1"></script><script src="https://cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-nest@latest/canvas-nest.min.js" color="243,81,151" opacity="0.5" count="100" zIndex="-2"></script><script>window.addEventListener('DOMContentLoaded', function () {
+  $('.header-nav-search').on('click', function (e) {
+    e.stopPropagation();
+
+    $('body').css('overflow', 'hidden');
+    $('.search-popup')
+      .addClass('show')
+      .velocity('stop')
+      .velocity('transition.expandIn', {
+        duration: 300,
+        complete: function () {
+          $('.search-popup input').focus();
+        }
+      });
+    $('.search-mask')
+      .velocity('stop')
+      .velocity('transition.fadeIn', {
+        duration: 300
+      });
+
+    initSearch();
+  });
+
+  $('.search-mask, .search-close').on('click', function () {
+    closeSearch();
+  });
+
+  $(document).on('keydown', function (e) {
+    // Escape <=> 27
+    if (e.keyCode === Stun.utils.codeToKeyCode('Escape')) {
+      closeSearch();
+    }
+  });
+
+  var isXML = true;
+  var search_path = 'search.xml';
+
+  if (!search_path) {
+    search_path = 'search.xml';
+  } else if (/json$/i.test(search_path)) {
+    isXML = false;
+  }
+
+  var path = '/' + search_path;
+
+  function initSearch() {
+    $.ajax({
+      url: path,
+      dataType: isXML ? 'xml' : 'json',
+      async: true,
+      success: function (res) {
+        var datas = isXML ? $('entry', res).map(function () {
+          // 将 XML 转为 JSON
+          return {
+            title: $('title', this).text(),
+            content: $('content', this).text(),
+            url: $('url', this).text()
+          };
+        }).get() : res;
+
+        var $input = $('.search-input input');
+        var $result = $('.search-results');
+
+        // 搜索对象（标题、内容）的权重，影响显示顺序
+        var WEIGHT = { title: 100, content: 1 };
+
+        var searchPost = function () {
+          var searchText = $input.val().toLowerCase().trim();
+          // 根据空白字符分隔关键字
+          var keywords = searchText.split(/[\s]+/);
+          // 搜索结果
+          var matchPosts = [];
+
+          // 有多个关键字时，将原文字整个保存下来
+          if (keywords.length > 1) {
+            keywords.push(searchText);
+          }
+
+          // 防止未输入字符时搜索
+          if (searchText.length > 0) {
+            datas.forEach(function (data) {
+              var isMatch  = false;
+
+              // 没有标题的文章使用预设的 i18n 变量代替
+              var title = (data.title && data.title.trim()) || '( 文章无标题 )';
+              var titleLower = title && title.toLowerCase();
+              // 删除 HTML 标签 和 所有空白字符
+              var content = data.content && data.content.replace(/<[^>]+>/g, '');
+              var contentLower = content && content.toLowerCase();
+              // 删除重复的 /
+              var postURL = data.url && decodeURI(data.url).replace(/\/{2,}/g, '/');
+
+              // 标题中匹配到的关键词
+              var titleHitSlice = [];
+              // 内容中匹配到的关键词
+              var contentHitSlice = [];
+
+              keywords.forEach(function (keyword) {
+                /**
+                  * 获取匹配的关键词的索引
+                  * @param {String} keyword 要匹配的关键字
+                  * @param {String} text 原文字
+                  * @param {Boolean} caseSensitive 是否区分大小写
+                  * @param {Number} weight 匹配对象的权重。权重大的优先显示
+                  * @return {Array}
+                  */
+                function getIndexByword (word, text, caseSensitive, weight) {
+                  if (!word || !text) return [];
+
+                  var startIndex = 0; // 每次匹配的开始索引
+                  var index = -1;     // 匹配到的索引值
+                  var result = [];    // 匹配结果
+
+                  if (!caseSensitive) {
+                    word = word.toLowerCase();
+                    text = text.toLowerCase();
+                  }
+
+                  while((index = text.indexOf(word, startIndex)) !== -1) {
+                    var hasMatch = false;
+
+                    // 索引位置相同的关键词，保留长度较长的
+                    titleHitSlice.forEach(function (hit) {
+                      if (hit.index === index && hit.word.length < word.length) {
+                        hit.word = word;
+                        hasMatch = true;
+                      }
+                    });
+                    startIndex = index + word.length;
+                    !hasMatch && result.push({ index: index, word: word, weight: weight });
+                  }
+
+                  return result;
+                }
+
+                titleHitSlice = titleHitSlice.concat(getIndexByword(keyword, titleLower, false, WEIGHT.title));
+                contentHitSlice = contentHitSlice.concat(getIndexByword(keyword, contentLower, false, WEIGHT.content));
+              });
+
+              var hitTitle = titleHitSlice.length;
+              var hitContent = contentHitSlice.length;
+
+              if (hitTitle > 0 || hitContent > 0) {
+                isMatch = true;
+              }
+
+              if (isMatch) {
+                ;[titleHitSlice, contentHitSlice].forEach(function (hit) {
+                  // 按照匹配文字的索引的递增顺序排序
+                  hit.sort(function (left, right) {
+                    return left.index - right.index;
+                  });
+                });
+
+                /**
+                  * 给文本中匹配到的关键词添加标记，从而进行高亮显示
+                  * @param {String} text 原文本
+                  * @param {Array} hitSlice 匹配项的索引信息
+                  * @param {Number} start 开始索引
+                  * @param {Number} end 结束索引
+                  * @return {String}
+                  */
+                function highlightKeyword (text, hitSlice, start, end) {
+                  if (!text || !hitSlice || !hitSlice.length) return;
+
+                  var result = '';
+                  var startIndex = start;
+                  var endIndex = end;
+
+                  hitSlice.forEach(function (hit) {
+                    if (hit.index < startIndex) return;
+
+                    var hitWordEnd = hit.index + hit.word.length;
+
+                    result += text.slice(startIndex, hit.index);
+                    result += '<b>' + text.slice(hit.index, hitWordEnd) + '</b>';
+                    startIndex = hitWordEnd;
+                  });
+                  result += text.slice(startIndex, endIndex);
+
+                  return result;
+                }
+
+                var postData = {};
+                // 文章总的搜索权重
+                var postWeight = titleHitSlice.length * WEIGHT.title + contentHitSlice.length * WEIGHT.content;
+                // 标记匹配关键词后的标题
+                var postTitle = highlightKeyword(title, titleHitSlice, 0, title.length) || title;
+                // 标记匹配关键词后的内容
+                var postContent;
+                // 显示内容的长度
+                var SHOW_WORD_LENGTH = 200;
+                // 命中关键词前的字符显示长度
+                var SHOW_WORD_FRONT_LENGTH = 20;
+                var SHOW_WORD_END_LENGTH = SHOW_WORD_LENGTH - SHOW_WORD_FRONT_LENGTH;
+
+                // 截取匹配的第一个字符，前后共 200 个字符来显示
+                if (contentHitSlice.length > 0) {
+                  var firstIndex = contentHitSlice[0].index;
+                  var start = firstIndex > SHOW_WORD_FRONT_LENGTH ? firstIndex - SHOW_WORD_FRONT_LENGTH : 0;
+                  var end = firstIndex + SHOW_WORD_END_LENGTH;
+
+                  postContent = highlightKeyword(content, contentHitSlice, start, end);
+                } else { // 未匹配到内容，直接截取前 200 个字符来显示
+                  postContent = content.slice(0, SHOW_WORD_LENGTH);
+                }
+
+                postData.title = postTitle;
+                postData.content = postContent;
+                postData.url = postURL;
+                postData.weight = postWeight;
+                matchPosts.push(postData);
+              }
+            });
+          }
+
+          var resultInnerHtml = '';
+
+          if (matchPosts.length) {
+            // 按权重递增的顺序排序，使权重大的优先显示
+            matchPosts.sort(function (left, right) {
+              return right.weight - left.weight;
+            });
+
+            resultInnerHtml += '<ul>';
+            matchPosts.forEach(function (post) {
+              resultInnerHtml += '<li><a class="search-results-title" href="' + post.url + '">';
+              resultInnerHtml += post.title;
+              resultInnerHtml += '</a><div class="search-results-content">';
+              resultInnerHtml += post.content;
+              resultInnerHtml += '</div></li>';
+            });
+            resultInnerHtml += '</ul>';
+          } else {
+            resultInnerHtml += '<div class="search-results-none"><i class="fa fa-meh-o"></i></div>';
+          }
+
+          $result.html(resultInnerHtml);
+        };
+
+        $input.on('input', searchPost);
+        $input.on('keypress', function (e) {
+          if (e.keyCode === Stun.utils.codeToKeyCode('Enter')) {
+            searchPost();
+          }
+        });
+      }
+    });
+  }
+
+  function closeSearch () {
+    $('body').css('overflow', 'auto');
+    $('.search-popup')
+      .removeClass('show')
+      .velocity('stop')
+      .velocity('transition.expandOut', {
+        duration: 300
+      });
+    $('.search-mask')
+      .velocity('stop')
+      .velocity('transition.fadeOut', {
+        duration: 300
+      });
+  }
+}, false);</script><script src="https://cdn.jsdelivr.net/gh/sukkaw/busuanzi@latest/bsz.pure.mini.js" async></script><script src="https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.js"></script><script src="https://cdn.jsdelivr.net/npm/js-md5@latest/src/md5.min.js"></script><script>function loadGitalk () {
+  if (!document.getElementById('gitalk-container')) {
+    return;
+  }
+
+  var gitalk = new Gitalk({
+    id: md5(window.location.pathname.slice(1)),
+    clientID: '23d7b4a6c1b1589b9d9b',
+    clientSecret: 'fcbbb62bf5fe3fac81979e69fd71cd637e0c523f',
+    repo: 'Lvshaomei.github.io',
+    owner: 'Lvshaomei',
+    admin: ['Lvshaomei'],
+    distractionFreeMode: 'true',
+    language: 'zh-CN'
+  });
+
+  gitalk.render('gitalk-container');
+}
+
+if (false) {
+  loadGitalk();
+} else {
+  window.addEventListener('DOMContentLoaded', loadGitalk, false);
+}</script><script src="../../../../js/utils.js?v=1.5.4"></script><script src="../../../../js/stun-boot.js?v=1.5.4"></script><script src="../../../../js/scroll.js?v=1.5.4"></script><script src="../../../../js/header.js?v=1.5.4"></script><script src="../../../../js/sidebar.js?v=1.5.4"></script></body></html>
