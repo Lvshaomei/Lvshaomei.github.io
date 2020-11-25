@@ -1,6 +1,104 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>AJAX</title>
+    <url>/2020/11/25/AJAX/</url>
+    <content><![CDATA[<h2 id="第一节AJAX"><span class="heading-link">第一节AJAX</span></h2><h3 id="1-AJAX的产生"><span class="heading-link">1.  AJAX的产生</span></h3><p> <span class="external-link"><a href="https://imgchr.com/i/DU452F" target="_blank" rel="noopener"><img src="https://s3.ax1x.com/2020/11/25/DU452F.png" alt="DU452F.png"></a><i class="fa fa-external-link"></i></span></p>
+<h3 id=""><span class="heading-link"></span></h3><h3 id="2．-AJAX-的优势"><span class="heading-link">2．**  AJAX**的优势**</span></h3><p><span class="external-link"><a href="https://imgchr.com/i/DU4zxe" target="_blank" rel="noopener"><img src="https://s3.ax1x.com/2020/11/25/DU4zxe.png" alt="DU4zxe.png"></a><i class="fa fa-external-link"></i></span></p>
+<h3 id="3-AJAX简介"><span class="heading-link">3. AJAX简介</span></h3><ul>
+<li><p><strong>AJAX 是一种在无需重新加载整个网页的情况下，能够更新部分网页的技术。</strong></p>
+</li>
+<li><p><strong>AJAX = 异步 JavaScript 和 XML</strong></p>
+</li>
+<li><p><strong>AJAX 是一种用于创建快速动态网页的技术。</strong></p>
+</li>
+<li><p><strong>通过在后台与服务器进行少量数据交换，AJAX 可以使网页实现异步更新。这意味着可以在不重新加载整个网页的情况下，对网页的某部分进行更新。</strong></p>
+</li>
+<li><p><strong>传统的网页（不使用 AJAX）如果需要更新内容，必需重载整个网页面。</strong></p>
+</li>
+</ul>
+<blockquote>
+<p><strong>具体内容可参考w3cschool(<span class="external-link"><a href="https://www.w3school.com.cn/ajax/ajax_intro.asp" target="_blank" rel="noopener">[https://www.w3school.com.cn/ajax/ajax_intro.asp]{.underline}</a><i class="fa fa-external-link"></i></span>)</strong></p>
+</blockquote>
+<h3 id="4-那XML有是什么呢？"><span class="heading-link">4. 那XML有是什么呢？</span></h3><ul>
+<li><p><strong>XML 被设计用来传输和存储数据，HTML 被设计用来显示数据。</strong></p>
+</li>
+<li><p><strong>XML 指可扩展标记语言（EXtensible Markup Language）</strong></p>
+</li>
+<li><p><strong>XML 是一种标记语言，很类似 HTML</strong></p>
+</li>
+<li><p><strong>XML 的设计宗旨是传输数据，而非显示数据</strong></p>
+</li>
+<li><p><strong>XML 标签没有被预定义。您需要自行定义标签。</strong></p>
+</li>
+<li><p><strong>XML 被设计为具有自我描述性</strong></p>
+</li>
+<li><p><strong>XML 是独立于软件和硬件的信息传输工具。</strong></p>
+</li>
+</ul>
+<h2 id="第二节-网络通信"><span class="heading-link">第二节 网络通信</span></h2><ol>
+<li><h3 id="网络架构"><span class="heading-link">网络架构</span></h3></li>
+</ol>
+<blockquote>
+<p><span class="external-link"><a href="https://imgchr.com/i/DU5ZRS" target="_blank" rel="noopener"><img src="https://s3.ax1x.com/2020/11/25/DU5ZRS.png" alt="DU5ZRS.png"></a><i class="fa fa-external-link"></i></span></p>
+</blockquote>
+<ol start="2">
+<li><h3 id="TCP-IP"><span class="heading-link">TCP/IP</span></h3></li>
+</ol>
+<blockquote>
+<p><span class="external-link"><a href="https://imgchr.com/i/DU5nMQ" target="_blank" rel="noopener"><img src="https://s3.ax1x.com/2020/11/25/DU5nMQ.png" alt="DU5nMQ.png"></a><i class="fa fa-external-link"></i></span></p>
+</blockquote>
+<ol start="3">
+<li><h3 id="传输过程"><span class="heading-link">传输过程</span></h3></li>
+</ol>
+<blockquote>
+<p><span class="external-link"><a href="https://imgchr.com/i/DU5JRU" target="_blank" rel="noopener"><img src="https://s3.ax1x.com/2020/11/25/DU5JRU.png" alt="DU5JRU.png"></a><i class="fa fa-external-link"></i></span></p>
+</blockquote>
+<h2 id="第三节-HTTP协议"><span class="heading-link">第三节 HTTP协议</span></h2><ol>
+<li><h3 id="http协议"><span class="heading-link">http协议</span></h3></li>
+</ol>
+<blockquote>
+<p><span class="external-link"><a href="https://imgchr.com/i/DU5gQe" target="_blank" rel="noopener"><img src="https://s3.ax1x.com/2020/11/25/DU5gQe.png" alt="DU5gQe.png"></a><i class="fa fa-external-link"></i></span></p>
+</blockquote>
+<ol>
+<li><strong>http协议的特点</strong></li>
+</ol>
+<blockquote>
+<p><span class="external-link"><a href="https://imgchr.com/i/DU52sH" target="_blank" rel="noopener"><img src="https://s3.ax1x.com/2020/11/25/DU52sH.png" alt="DU52sH.png"></a><i class="fa fa-external-link"></i></span></p>
+</blockquote>
+<ol>
+<li><strong>三次握手</strong></li>
+</ol>
+<blockquote>
+<p><span class="external-link"><a href="https://imgchr.com/i/DU5LLj" target="_blank" rel="noopener"><img src="https://s3.ax1x.com/2020/11/25/DU5LLj.png" alt="DU5LLj.png"></a><i class="fa fa-external-link"></i></span></p>
+</blockquote>
+<script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>]]></content>
+      <categories>
+        <category>AJAX初识</category>
+      </categories>
+      <tags>
+        <tag>AJAX</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>JS笔记</title>
     <url>/2020/10/11/JS%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<h2 id="第一章-数据类型"><span class="heading-link">第一章  数据类型</span></h2><h3 id="前言"><span class="heading-link">前言</span></h3><p>学习前端的已经有一段日子了，但是在JS的学习方面还是有所欠缺的<span class="github-emoji" style="color: transparent;background:no-repeat url(https://github.githubassets.com/images/icons/emoji/unicode/1f61e.png?v8) center/contain" data-src="https://github.githubassets.com/images/icons/emoji/unicode/1f61e.png?v8">😞</span>，所以现在写一些JS的相关笔记以督促自己。在学习的过程中，我发现做笔记还是很重要的<span class="github-emoji" style="color: transparent;background:no-repeat url(https://github.githubassets.com/images/icons/emoji/unicode/1f4d6.png?v8) center/contain" data-src="https://github.githubassets.com/images/icons/emoji/unicode/1f4d6.png?v8">📖</span>，同时笔记的格式也是十分重要的，一个潦草而无序的笔记只会让人看了更头疼，不做笔记很快就会忘记了，所以有了笔记就可以久不久翻出来看看，当笔记积累到一定程度后也会有一定的成就感。现在把暑假屯下来的笔记发出来了，当然后面还会有几篇笔记发出来。加油吧少年，奥里给<span class="github-emoji" style="color: transparent;background:no-repeat url(https://github.githubassets.com/images/icons/emoji/unicode/1f4aa.png?v8) center/contain" data-src="https://github.githubassets.com/images/icons/emoji/unicode/1f4aa.png?v8">💪</span> <span class="github-emoji" style="color: transparent;background:no-repeat url(https://github.githubassets.com/images/icons/emoji/unicode/1f4aa.png?v8) center/contain" data-src="https://github.githubassets.com/images/icons/emoji/unicode/1f4aa.png?v8">💪</span> <span class="github-emoji" style="color: transparent;background:no-repeat url(https://github.githubassets.com/images/icons/emoji/unicode/1f4aa.png?v8) center/contain" data-src="https://github.githubassets.com/images/icons/emoji/unicode/1f4aa.png?v8">💪</span></p>
