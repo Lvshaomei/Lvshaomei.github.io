@@ -1,6 +1,135 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>JS笔记--运算符(续)</title>
+    <url>/2020/11/25/js%E8%BF%90%E7%AE%97%E7%AC%A6/</url>
+    <content><![CDATA[<h2 id="JS笔记（续）—运算符"><span class="heading-link">JS笔记（续）—运算符</span></h2><ol>
+<li><h3 id="运算符定义："><span class="heading-link">运算符定义：</span></h3></li>
+</ol>
+<blockquote>
+<p><span class="external-link"><a href="https://imgchr.com/i/DU7xuF" target="_blank" rel="noopener"><img src="https://s3.ax1x.com/2020/11/25/DU7xuF.png" alt="DU7xuF.png"></a><i class="fa fa-external-link"></i></span></p>
+</blockquote>
+<ol start="2">
+<li><h3 id="算术运算符概述"><span class="heading-link">算术运算符概述</span></h3></li>
+</ol>
+<blockquote>
+<p><span class="external-link"><a href="https://imgchr.com/i/DUHF9x" target="_blank" rel="noopener"><img src="https://s3.ax1x.com/2020/11/25/DUHF9x.png" alt="DUHF9x.png"></a><i class="fa fa-external-link"></i></span></p>
+</blockquote>
+<ol start="3">
+<li><h3 id="浮点数精度问题"><span class="heading-link">浮点数精度问题</span></h3></li>
+</ol>
+<blockquote>
+<p><u>不要直接拿浮点数来计算，要尽量避开浮点数。</u></p>
+<p><span class="external-link"><a href="https://imgchr.com/i/DUHZuD" target="_blank" rel="noopener"><img src="https://s3.ax1x.com/2020/11/25/DUHZuD.png" alt="DUHZuD.png"></a><i class="fa fa-external-link"></i></span></p>
+</blockquote>
+<ol start="4">
+<li><h3 id="表达式和返回值"><span class="heading-link">表达式和返回值</span></h3></li>
+</ol>
+<blockquote>
+<p><span class="external-link"><a href="https://imgchr.com/i/DUHB80" target="_blank" rel="noopener"><img src="https://s3.ax1x.com/2020/11/25/DUHB80.png" alt="DUHB80.png"></a><i class="fa fa-external-link"></i></span></p>
+</blockquote>
+<ol start="5">
+<li><h3 id="递增、递减"><span class="heading-link">递增、递减</span></h3></li>
+</ol>
+<blockquote>
+<p><span class="external-link"><a href="https://imgchr.com/i/DUHhP1" target="_blank" rel="noopener"><img src="https://s3.ax1x.com/2020/11/25/DUHhP1.png" alt="DUHhP1.png"></a><i class="fa fa-external-link"></i></span></p>
+</blockquote>
+<ul>
+<li><strong>前置递增</strong></li>
+</ul>
+<blockquote>
+<p><span class="external-link"><a href="https://imgchr.com/i/DUHqVH" target="_blank" rel="noopener"><img src="https://s3.ax1x.com/2020/11/25/DUHqVH.png" alt="DUHqVH.png"></a><i class="fa fa-external-link"></i></span></p>
+</blockquote>
+<ul>
+<li><strong>后置递增</strong></li>
+</ul>
+<blockquote>
+<p><span class="external-link"><a href="https://imgchr.com/i/DUb9sS" target="_blank" rel="noopener"><img src="https://s3.ax1x.com/2020/11/25/DUb9sS.png" alt="DUb9sS.png"></a><i class="fa fa-external-link"></i></span></p>
+</blockquote>
+<ol start="5">
+<li><h3 id="比较运算符"><span class="heading-link">比较运算符</span></h3></li>
+</ol>
+<blockquote>
+<p><span class="external-link"><a href="https://imgchr.com/i/DUbFaj" target="_blank" rel="noopener"><img src="https://s3.ax1x.com/2020/11/25/DUbFaj.png" alt="DUbFaj.png"></a><i class="fa fa-external-link"></i></span></p>
+<p><span class="external-link"><a href="https://imgchr.com/i/DUbNQK" target="_blank" rel="noopener"><img src="https://s3.ax1x.com/2020/11/25/DUbNQK.png" alt="DUbNQK.png"></a><i class="fa fa-external-link"></i></span></p>
+</blockquote>
+<ol start="7">
+<li><h4 id="逻辑运算符"><span class="heading-link">逻辑运算符</span></h4></li>
+</ol>
+<blockquote>
+<p><span class="external-link"><a href="https://imgchr.com/i/DUq6AJ" target="_blank" rel="noopener"><img src="https://s3.ax1x.com/2020/11/25/DUq6AJ.png" alt="DUq6AJ.png"></a><i class="fa fa-external-link"></i></span></p>
+</blockquote>
+<ul>
+<li><strong>逻辑与的短路运算</strong></li>
+</ul>
+<blockquote>
+<p><span class="external-link"><a href="https://imgchr.com/i/DULD2t" target="_blank" rel="noopener"><img src="https://s3.ax1x.com/2020/11/25/DULD2t.png" alt="DULD2t.png"></a><i class="fa fa-external-link"></i></span></p>
+</blockquote>
+<ul>
+<li><strong>逻辑或的逻辑中断</strong></li>
+</ul>
+<blockquote>
+<p><span class="external-link"><a href="https://imgchr.com/i/DULhPs" target="_blank" rel="noopener"><img src="https://s3.ax1x.com/2020/11/25/DULhPs.png" alt="DULhPs.png"></a><i class="fa fa-external-link"></i></span></p>
+</blockquote>
+<ol start="8">
+<li><h3 id="赋值运算符"><span class="heading-link">赋值运算符</span></h3></li>
+</ol>
+<blockquote>
+<p><span class="external-link"><a href="https://imgchr.com/i/DUL4Gn" target="_blank" rel="noopener"><img src="https://s3.ax1x.com/2020/11/25/DUL4Gn.png" alt="DUL4Gn.png"></a><i class="fa fa-external-link"></i></span></p>
+</blockquote>
+<ol start="9">
+<li><h3 id="运算符优先级"><span class="heading-link">运算符优先级</span></h3></li>
+</ol>
+<blockquote>
+<p><span class="external-link"><a href="https://imgchr.com/i/DULTMV" target="_blank" rel="noopener"><img src="https://s3.ax1x.com/2020/11/25/DULTMV.png" alt="DULTMV.png"></a><i class="fa fa-external-link"></i></span></p>
+</blockquote>
+<ol start="10">
+<li><h3 id="Switch语法使用"><span class="heading-link">Switch语法使用</span></h3></li>
+</ol>
+<blockquote>
+<p><span class="external-link"><a href="https://imgchr.com/i/DULLa4" target="_blank" rel="noopener"><img src="https://s3.ax1x.com/2020/11/25/DULLa4.png" alt="DULLa4.png"></a><i class="fa fa-external-link"></i></span></p>
+<p><strong>注意事项：</strong></p>
+<p><span class="external-link"><a href="https://imgchr.com/i/DULzxx" target="_blank" rel="noopener"><img src="https://s3.ax1x.com/2020/11/25/DULzxx.png" alt="DULzxx.png"></a><i class="fa fa-external-link"></i></span></p>
+</blockquote>
+<ol start="11">
+<li><h3 id="Switch语句和if-else-if-语句的区别"><span class="heading-link">Switch语句和if else if 语句的区别</span></h3></li>
+</ol>
+<blockquote>
+<p><span class="external-link"><a href="https://imgchr.com/i/DULvGR" target="_blank" rel="noopener"><img src="https://s3.ax1x.com/2020/11/25/DULvGR.png" alt="DULvGR.png"></a><i class="fa fa-external-link"></i></span></p>
+</blockquote>
+<ol start="12">
+<li><h3 id="断点调试"><span class="heading-link">断点调试</span></h3></li>
+</ol>
+<blockquote>
+<p><span class="external-link"><a href="https://imgchr.com/i/DUOkIH" target="_blank" rel="noopener"><img src="https://s3.ax1x.com/2020/11/25/DUOkIH.png" alt="DUOkIH.png"></a><i class="fa fa-external-link"></i></span></p>
+</blockquote>
+<script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>]]></content>
+      <categories>
+        <category>JS笔记</category>
+      </categories>
+      <tags>
+        <tag>js</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>AJAX</title>
     <url>/2020/11/25/AJAX/</url>
     <content><![CDATA[<h2 id="第一节AJAX"><span class="heading-link">第一节AJAX</span></h2><h3 id="1-AJAX的产生"><span class="heading-link">1.  AJAX的产生</span></h3><p> <span class="external-link"><a href="https://imgchr.com/i/DU452F" target="_blank" rel="noopener"><img src="https://s3.ax1x.com/2020/11/25/DU452F.png" alt="DU452F.png"></a><i class="fa fa-external-link"></i></span></p>
@@ -18,7 +147,8 @@
 </li>
 </ul>
 <blockquote>
-<p><strong>具体内容可参考w3cschool(<span class="external-link"><a href="https://www.w3school.com.cn/ajax/ajax_intro.asp" target="_blank" rel="noopener">[https://www.w3school.com.cn/ajax/ajax_intro.asp]{.underline}</a><i class="fa fa-external-link"></i></span>)</strong></p>
+<p>**具体内容可参考</p>
+<p><span class="external-link"><a href="https://www.w3school.com.cn/ajax/ajax_intro.asp" target="_blank" rel="noopener">w3cschool</a><i class="fa fa-external-link"></i></span></p>
 </blockquote>
 <h3 id="4-那XML有是什么呢？"><span class="heading-link">4. 那XML有是什么呢？</span></h3><ul>
 <li><p><strong>XML 被设计用来传输和存储数据，HTML 被设计用来显示数据。</strong></p>
@@ -413,6 +543,9 @@
             document.body.appendChild(img);
           });
       </script>]]></content>
+      <categories>
+        <category>JS笔记</category>
+      </categories>
       <tags>
         <tag>js</tag>
       </tags>
