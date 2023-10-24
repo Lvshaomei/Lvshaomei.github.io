@@ -451,42 +451,6 @@
       </tags>
   </entry>
   <entry>
-    <title>【第一期AI夏令营丨自然语言处理】赛事信息</title>
-    <url>/2023/10/24/%E3%80%90%E7%AC%AC%E4%B8%80%E6%9C%9FAI%E5%A4%8F%E4%BB%A4%E8%90%A5%E4%B8%A8%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E3%80%91%E8%B5%9B%E4%BA%8B%E4%BF%A1%E6%81%AF/%E3%80%90%E7%AC%AC%E4%B8%80%E6%9C%9FAI%E5%A4%8F%E4%BB%A4%E8%90%A5%E4%B8%A8%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E3%80%91%E8%B5%9B%E4%BA%8B%E4%BF%A1%E6%81%AF/</url>
-    <content><![CDATA[<p>﻿### 基于论文摘要的文本分类与关键词抽取挑战赛  ：<span class="external-link"><a href="https://challenge.xfyun.cn/topic/info?type=abstract-of-the-paper&amp;ch=ZuoaKcY" target="_blank" rel="noopener">https://challenge.xfyun.cn/topic/info?type=abstract-of-the-paper&amp;ch=ZuoaKcY</a><i class="fa fa-external-link"></i></span></p>
-<p><img src="/2023/10/24/%E3%80%90%E7%AC%AC%E4%B8%80%E6%9C%9FAI%E5%A4%8F%E4%BB%A4%E8%90%A5%E4%B8%A8%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E3%80%91%E8%B5%9B%E4%BA%8B%E4%BF%A1%E6%81%AF/%E3%80%90%E7%AC%AC%E4%B8%80%E6%9C%9FAI%E5%A4%8F%E4%BB%A4%E8%90%A5%E4%B8%A8%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E3%80%91%E8%B5%9B%E4%BA%8B%E4%BF%A1%E6%81%AF/1.png" alt=""></p>
-<h1 id="赛题解析"><span class="heading-link">赛题解析</span></h1><p>本任务分为两个子任务：<br><strong>1. 从论文标题、摘要作者等信息，判断该论文是否属于医学领域的文献。</strong><br><strong>2. 从论文标题、摘要作者等信息，提取出该论文关键词。</strong></p>
-<p><strong>第一个任务</strong>看作是一个<strong>文本二分类任务。</strong>机器需要根据对论文摘要等信息的理解，将论文划分为医学领域的文献和非医学领域的文献两个类别之一<strong>。第二个任务</strong>看作是一个<strong>文本关键词识别任务</strong>。机器需要从给定的论文中识别和提取出与论文内容相关的关键词。<br>*<em>train.csv *</em>部分信息如下图：<br><img src="/2023/10/24/%E3%80%90%E7%AC%AC%E4%B8%80%E6%9C%9FAI%E5%A4%8F%E4%BB%A4%E8%90%A5%E4%B8%A8%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E3%80%91%E8%B5%9B%E4%BA%8B%E4%BF%A1%E6%81%AF/%E3%80%90%E7%AC%AC%E4%B8%80%E6%9C%9FAI%E5%A4%8F%E4%BB%A4%E8%90%A5%E4%B8%A8%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E3%80%91%E8%B5%9B%E4%BA%8B%E4%BF%A1%E6%81%AF/2.png" alt="image.png"></p>
-<p>*<em>test.csv *</em>部分信息如下图：<br><img src="/2023/10/24/%E3%80%90%E7%AC%AC%E4%B8%80%E6%9C%9FAI%E5%A4%8F%E4%BB%A4%E8%90%A5%E4%B8%A8%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E3%80%91%E8%B5%9B%E4%BA%8B%E4%BF%A1%E6%81%AF/%E3%80%90%E7%AC%AC%E4%B8%80%E6%9C%9FAI%E5%A4%8F%E4%BB%A4%E8%90%A5%E4%B8%A8%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E3%80%91%E8%B5%9B%E4%BA%8B%E4%BF%A1%E6%81%AF/3.png" alt="image.png"></p>
-<h2 id="数据集解析"><span class="heading-link">数据集解析</span></h2><p><br>训练集与测试集数据为CSV格式文件，各字段分别是标题、作者和摘要。Keywords为任务2的标签，label为任务1的标签。训练集和测试集都可以通过pandas读取。</p>
-<h2 id="【参考】"><span class="heading-link">【参考】</span></h2><p><span class="external-link"><a href="https://aistudio.baidu.com/aistudio/projectdetail/6522950?sUid=377372&amp;shared=1&amp;ts=1689827255213" target="_blank" rel="noopener">手把手打一场NLP赛事</a><i class="fa fa-external-link"></i></span></p>
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script>]]></content>
-      <categories>
-        <category>【第一期AI夏令营丨自然语言处理】</category>
-      </categories>
-      <tags>
-        <tag>NLP</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>带你用油猴插件免费观看各大平台（B站、爱奇艺等）VIP视频</title>
     <url>/2023/10/24/%E5%B8%A6%E4%BD%A0%E7%94%A8%E6%B2%B9%E7%8C%B4%E6%8F%92%E4%BB%B6%E5%85%8D%E8%B4%B9%E8%A7%82%E7%9C%8B%E5%90%84%E5%A4%A7%E5%B9%B3%E5%8F%B0%EF%BC%88B%E7%AB%99%E3%80%81%E7%88%B1%E5%A5%87%E8%89%BA%E7%AD%89%EF%BC%89VIP%E8%A7%86%E9%A2%91/</url>
     <content><![CDATA[<p>﻿## 前言</p>
