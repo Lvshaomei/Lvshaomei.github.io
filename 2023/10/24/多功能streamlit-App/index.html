@@ -1,0 +1,401 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><meta name="keywords" content="LSM, Mia's blog"><meta name="description" content="生活总是需要不断的跌倒，再不断的爬起来，这就是生活。"><title>多功能streamlit_App | Mia's blog</title><meta name="google-site-verification" content="HPcpCEPE_TQ7LlH-LAToYJleDQ7ydr0Mgiw95TQ5GNQ"><meta name="msvalidate.01" content="9C903B945C2FE1FB1A111163F0C32703"><meta name="theme-color" content="#54bcff"><link rel="manifest" href="../../../../manifest.json?v=1.5.4"><link rel="icon" href="../../../../images/icons/Lv-16.png?v=1.5.4" type="image/png" sizes="16x16"><link rel="icon" href="../../../../images/icons/Lv-32.png?v=1.5.4" type="image/png" sizes="32x32"><link rel="alternate" href="../../../../atom.xml" type="application/atom+xml"><link rel="dns-prefetch" href="https://cdn.jsdelivr.net"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" type="text/css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.css" type="text/css"><link rel="stylesheet" href="../../../../css/index.css?v=1.5.4"><link rel="dns-prefetch" href="https://www.googletagmanager.com"><link rel="dns-prefetch" href="https://hm.baidu.com"><link rel="dns-prefetch" href="https://tajs.qq.com"><script src="https://www.googletagmanager.com/gtag/js?id=UA-156048106-1" async=""></script><script>if (window.location.hostname !== 'localhost') {
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){ dataLayer.push(arguments); }
+  gtag('js', new Date());
+  gtag('config', 'UA-156048106-1');
+}</script><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement('script');
+  hm.src = 'https://hm.baidu.com/hm.js?3df607e8ce8da7ad737b9205f02966ee';
+  hm.async = true;
+
+  if (false) { hm.setAttribute('data-pjax', ''); }
+
+  var s = document.getElementsByTagName('script')[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();</script><script>(function() {
+  var hm = document.createElement('script');
+  hm.src = 'https://tajs.qq.com/stats?sId=undefined';
+  hm.async = true;
+
+  if (false) { hm.setAttribute('data-pjax', ''); }
+
+  var s = document.getElementsByTagName('script')[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();</script><script>var Stun = window.Stun || {};
+var CONFIG = {
+  root: '/',
+  algolia: undefined,
+  fontawesome: {"prefix":"fa"},
+  sidebar: {"offsetTop":"30px","renderTocDepth":4},
+  header: {"scrollDownIcon":true},
+  back2top: {"enable":true},
+  reward: false,
+  fancybox: false,
+  zoom_image: {"enable":true,"mask_color":"rgba(0,0,0,0.6)"},
+  gallery_waterfall: undefined,
+  lazyload: undefined,
+  pjax: undefined,
+  external_link: {"icon":{"enable":true,"name":"external-link"}},
+  shortcuts: {"switch_post":false},
+  prompt: {"copy_success":"复制成功","copy_error":"复制失败","creative_commons":"知识共享","copy_button":"点击复制"}
+};
+
+window.CONFIG = CONFIG;</script></head><body><div class="container" id="container"><header class="header" id="header"><div class="header-inner"><nav class="header-nav"><div class="header-nav-inner"><div class="header-nav-btn fa fa-bars"></div><div class="header-nav-menu"><div class="header-nav-menu-item"><a class="header-nav-menu-item__a" href="/"><i class="fa fa-home"></i>首页</a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__a" href="javascript:;" target="_blank" rel="noopener"><i class="fa fa-paint-brush"></i>文章</a><div class="header-nav-submenu"><div class="header-nav-menu-item"><a class="header-nav-menu-item__a" href="/archives/"><i class="fa fa-folder-open"></i>归档</a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__a" href="/categories/"><i class="fa fa-th"></i>分类</a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__a" href="/tags/"><i class="fa fa-tags"></i>标签</a></div></div></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__a" href="/about/"><i class="fa fa-user"></i>关于</a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__a" href="/friends/"><i class="fa fa-hand-spock-o"></i>友链</a></div></div><div class="header-nav-search"><i class="fa fa-search"></i><span>搜索</span></div></div></nav><div class="header-info"><div class="header-info-inner"><div class="header-info-title">Mia's blog</div><div class="header-info-subtitle">留意身边的美好</div></div><div class="header-info-scrolldown"><i class="fa fa-angle-down header-info-scrolldown__icon"></i></div></div></div></header><main class="main" id="main"><div class="main-inner"><div class="content-wrap" id="content-wrap"><div class="content"><div class="post"><header class="post-header"><h1 class="post-header-title">多功能streamlit_App</h1><div class="post-header-meta"><span class="post-header-meta-create"><i class="fa fa-calendar-o"></i><span>发表于 </span><span>2023-10-24</span></span><span class="post-header-meta-update"><i class="fa fa-calendar-check-o"></i><span>更新于 </span><span>2023-10-24</span></span><span class="post-header-meta-word-count"><i class="fa fa-file-word-o"></i><span>字数统计 </span><span>1.5k</span></span><span class="post-header-meta-reading-time"><i class="fa fa-clock-o"></i><span>阅读时长 </span><span>9m</span></span><span class="post-header-meta-reading-count"><i class="fa fa-eye"></i><span>阅读次数 </span><span id="busuanzi_value_page_pv"></span></span></div></header><div class="post-body"><p>﻿# ✨多功能streamlit_App</p>
+<h4 id="深度学习模型部署实现图片检测、视频检测、人脸识别（判断是否是同一个人）、图片分类。"><span class="heading-link">深度学习模型部署实现图片检测、视频检测、人脸识别（判断是否是同一个人）、图片分类。</span></h4><p>注：人脸识别为自己实现的功能，具体详细的介绍下面已经给出。</p>
+<h1 id="demo演示"><span class="heading-link">demo演示</span></h1><p>[video(video-V13rvJQ6-1691047199053)(type-csdn)(url-<span class="external-link"><a href="https://live.csdn.net/v/embed/314987)(image-https://video-community.csdnimg.cn/vod-84deb4/70703b702bc171eebff37035d0b20102/snapshots/3f7b5a63871f461e914a0b5f827b7f58-00005.jpg?auth_key=4843982050-0-0-f5162d684ba0c9f88ee39b03e30de32a)(title-演示demo2)]" target="_blank" rel="noopener">https://live.csdn.net/v/embed/314987)(image-https://video-community.csdnimg.cn/vod-84deb4/70703b702bc171eebff37035d0b20102/snapshots/3f7b5a63871f461e914a0b5f827b7f58-00005.jpg?auth_key=4843982050-0-0-f5162d684ba0c9f88ee39b03e30de32a)(title-演示demo2)]</a><i class="fa fa-external-link"></i></span></p>
+<h1 id="安装依赖"><span class="heading-link">安装依赖</span></h1><p><code>pip install -r requirements.txt    # 本地安装</code></p>
+<h1 id="运行项目"><span class="heading-link">运行项目</span></h1><p>首先现在人脸识别FaceModel文件夹中进行训练，得到model，然后将Facemodel.py文件中的pkl文件进行替换。然后在终端运行下面的命令。</p>
+<p><code>streamlit run login.py</code></p>
+<p>[外链图片转存失败,源站可能有防盗链机制,建议将图片保存下来直接上传(img-GcD8ZTaY-1691047154847)(./Page_data/users.png)]</p>
+<p>根据用户名和密码登录，然后进入主页面。</p>
+<p><img src="https://img-blog.csdnimg.cn/5622d08e480f4ef08d4d9833b89ce890.png#pic_center" alt="在这里插入图片描述"></p>
+<p><img src="https://img-blog.csdnimg.cn/34dce2f01724488ca08098921401fac7.png#pic_center" alt="在这里插入图片描述"></p>
+<p><img src="https://img-blog.csdnimg.cn/db366e868b984d28a4b1e9451679e833.png#pic_center" alt="在这里插入图片描述"></p>
+<h1 id="功能介绍"><span class="heading-link">功能介绍</span></h1><h2 id="a-图片检测"><span class="heading-link">a. 图片检测</span></h2><p><img src="https://img-blog.csdnimg.cn/29633413150346a7a0db7ad1148344c3.png#pic_center" alt="在这里插入图片描述"></p>
+<h2 id="b-视频检测"><span class="heading-link">b. 视频检测</span></h2><p><img src="https://img-blog.csdnimg.cn/7285107c49234feea310ee7c1834cec8.png#pic_center" alt="在这里插入图片描述"></p>
+<h2 id="c-人脸识别"><span class="heading-link">c. 人脸识别</span></h2><p>由于人脸识别功能是自己写自己训练得到的，所以下面将对代码进行详细介绍。<br><img src="https://img-blog.csdnimg.cn/76f0c5e7fdee436a8ee2666d5ae99102.png#pic_center" alt="在这里插入图片描述"></p>
+<h3 id="1-训练模型数据集"><span class="heading-link">1. 训练模型数据集</span></h3><figure class="highlight plain"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">CeleA前500个数据集和CASIA数据集</span><br></pre></td></tr></tbody></table></div></figure>
+
+<h3 id="2-数据处理"><span class="heading-link">2. 数据处理</span></h3><p><strong>说明</strong>：由于<code>CeleA</code>和<code>CASIA</code>数据集不是单纯的人脸，所以用<code>MTCNN</code>模型提取人脸，然后保存到文件夹中。</p>
+<h4 id="2-1-数据预处理"><span class="heading-link">2.1 数据预处理</span></h4><p>两个数据集包含的总的人脸个数和每个人的人脸个数数量不同，出现了数据不平衡的问题。所以在数据处理阶段我们采用<strong>数据融合</strong>的方法解决数据不平衡的问题，即将<code>CASIA</code>数据集和<code>CELEA</code>的前500个数据集进行融合。得到是数据存放在中间数据文件夹<code>temp_data</code>中。</p>
+<ol>
+<li><code>CASIA_face_detection.py</code>用于实现<code>CASIA</code>数据集的人脸检测并保存。<code>CASIA</code>数据集中同一个人有5张不同的图片。执行以下命令即可获得预处理后的<code>CASIA</code>数据集。</li>
+</ol>
+<figure class="highlight shell"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">python CASIA_face_detection.py trainSetCASIA_Dir CASIA_face_train_save_path</span><br><span class="line">【说明】</span><br><span class="line">trainSetCASIA_Dir为数据集CASIA的路径，</span><br><span class="line">CASIA_face_train_save_path为人脸检测后图片的保存路径。</span><br></pre></td></tr></tbody></table></div></figure>
+
+<ol start="2">
+<li><code>Data_processing_and_detection.py</code>实现<code>CELEA</code>数据集的人脸检测并保存。<code>CELEA</code>数据集同一个人有多张不同的图片（超过5张）。执行以下命令即可获得预处理后的<code>CELEA</code>数据集。</li>
+</ol>
+<figure class="highlight shell"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">python Data_processing_and_detection.py identify_path img_path save_path CeleA_and_CASIA_save_path </span><br><span class="line">【说明】</span><br><span class="line">identify_path为数据集CELEA的标签路径，</span><br><span class="line">img_path为CELEA人脸图片路径，</span><br><span class="line">save_path为人脸检测后图片的保存路径，</span><br><span class="line">CeleA_and_CASIA_save_path为CeleA数据集完成编号后保存人脸图片的路径（实现从500开始编号）。</span><br></pre></td></tr></tbody></table></div></figure>
+
+<p><strong>经过以上两步的处理，我们得到预处理后的<code>CASIA</code>数据集和<code>CELEA</code>数据集。于是将两个数据集合并到同一个文件夹，其中包含1000个人的人脸图像，000-499来源于<code>CASIA</code>数据集，500-1000来源于<code>CeleA</code>数据集。</strong></p>
+<h4 id="2-2-MTCNN模型原理"><span class="heading-link">2.2 MTCNN模型原理</span></h4><p>第一阶段是使用一种叫做<code>PNet</code>(Proposal Network)的卷积神经网络，获得候选窗体和边界回归向量。同时，候选窗体根据边界框进行校准。然后利用非极大值抑制去除重叠窗体。第二阶段是使用<code>R-Net</code>(Refine Network)卷积神经网络进行操作，将经过<code>P-Net</code>确定的包含候选窗体的图片在<code>R-Net</code>中训练，最后使用全连接网络进行分类。利用边界框向量微调候选窗体，最后还是利用非极大值抑制算法去除重叠窗体。第三阶段，使用<code>Onet</code>(Output Network)卷积神经网络进行操作，该网络比<code>R-Net</code>多一层卷积层，功能与<code>R-Net</code>类似。网络结构图如下。</p>
+<p><img src="https://img-blog.csdnimg.cn/31529324a94c41a5b41726cfa07290c1.jpeg#pic_center" alt="在这里插入图片描述"></p>
+<h3 id="3-模型处理"><span class="heading-link">3. 模型处理</span></h3><h4 id="3-1-模型训练"><span class="heading-link">3.1 模型训练</span></h4><figure class="highlight markdown"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">执行命令： python train.py trainSetDir modelPath</span><br><span class="line">说明：将trainSetDir改为训练集所在的路径，将modelPath改为模型保存的路径。</span><br></pre></td></tr></tbody></table></div></figure>
+
+<h4 id="数据增强：从数据集随机选择两张图片，对其进行添加椒盐噪声，水平翻转、高斯噪声、平移缩放旋转，其中数据增强是随机的。"><span class="heading-link">数据增强：从数据集随机选择两张图片，对其进行添加椒盐噪声，水平翻转、高斯噪声、平移缩放旋转，其中数据增强是随机的。</span></h4><figure class="highlight python"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">transform = transforms.Compose([transforms.Resize((<span class="number">256</span>, <span class="number">256</span>)),</span><br><span class="line">                                AddPepperNoise(<span class="number">0.9</span>,<span class="number">0.5</span>),</span><br><span class="line">                                transforms.ToTensor()])</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">albu_transfomem = A.Compose([A.HorizontalFlip(p = <span class="number">0.5</span>),</span><br><span class="line">                             A.OneOf([</span><br><span class="line">                                 A.IAAAdditiveGaussianNoise(),</span><br><span class="line">                                 A.GaussNoise(var_limit=(<span class="number">10</span>,<span class="number">80</span>))</span><br><span class="line">                             ],p=<span class="number">0.8</span>),</span><br><span class="line">                             A.ShiftScaleRotate(scale_limit = <span class="number">0.1</span>,rotate_limit=<span class="number">15</span>,p=<span class="number">0.6</span>)</span><br><span class="line">                             ],p=<span class="number">0.6</span>)</span><br></pre></td></tr></tbody></table></div></figure>
+
+<h4 id="训练参数设置"><span class="heading-link">训练参数设置</span></h4><figure class="highlight python"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">train_epochs = <span class="number">200</span></span><br><span class="line">in_shape = [<span class="number">256</span>, <span class="number">256</span>]</span><br><span class="line">train_batch_size = <span class="number">16</span></span><br><span class="line">ptimizer = torch.optim.Adam(net.parameters(), <span class="number">0.0001</span>, betas=(<span class="number">0.9</span>, <span class="number">0.999</span>)) <span class="comment">#初始学习率为0.0001</span></span><br><span class="line">torch.manual_seed(<span class="number">22</span>) <span class="comment">#随机种子，防止模型出现随机性</span></span><br><span class="line">np.random.seed(<span class="number">22</span>)</span><br><span class="line">criterion = torch.nn.BCEWithLogitsLoss() <span class="comment"># 交叉熵损失函数</span></span><br></pre></td></tr></tbody></table></div></figure>
+
+<h4 id="3-2-模型预测"><span class="heading-link">3. 2 模型预测</span></h4><figure class="highlight markdown"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">执行命令： python test.py testSetDir resultPath</span><br><span class="line">说明：将testSetDir改为测试集所在的路径，将resultPath改为结果保存的路径。</span><br></pre></td></tr></tbody></table></div></figure>
+
+<h4 id="3-3-模型原理"><span class="heading-link">3.3 模型原理</span></h4><p>通俗的来说<strong><code>SENet</code>的核心思想在于通过网络根据loss去学习特征权重，使得有效的feature map权重大，无效或效果小的feature map权重小的方式训练模型达到更好的结果</strong>。<code>SENet-154</code>的构建是将<code>SE</code>块合并到<code>64×4d ResNeXt-152</code>的修改版本中，该版本采用<code>ResNet-152</code>的块堆叠策略，扩展了原来的<code>ResNeXt-101</code>。<code>SE</code>结构图如下。</p>
+<p><img src="https://img-blog.csdnimg.cn/7f47dcc0a0a94f76ae384e8941359fdf.jpeg#pic_center" alt="在这里插入图片描述"></p>
+<p><code>SENET-154</code>与<code>SE</code>存在的其他差异如下：</p>
+<ul>
+<li>将第一个7×7卷积层替换为3个连续的3 × 3卷积层</li>
+<li><code>每个bottleneck building block</code>的前1 × 1个卷积通道的数量减半，以降低模型的计算成本，同时性能下降最小。</li>
+<li>为了减少过拟合，在分类层之前插入一个<code>dropout layer (dropout ratio为0.2)</code>。</li>
+<li>在训练过程中使用了标签平滑正则化。</li>
+</ul>
+<h2 id="d-图片分类"><span class="heading-link">d. 图片分类</span></h2><p><img src="https://img-blog.csdnimg.cn/fd6d24f448684cb6982add980312880e.png#pic_center" alt="在这里插入图片描述"></p>
+<h1 id="参考链接"><span class="heading-link">参考链接</span></h1><p>[1] <span class="external-link"><a href="https://streamlit.io/" target="_blank" rel="noopener">streamlit</a><i class="fa fa-external-link"></i></span></p>
+<p>[2] <span class="external-link"><a href="https://github.com/xugaoxiang/yolov5-streamlit/tree/main" target="_blank" rel="noopener">YOLOv5 检测</a><i class="fa fa-external-link"></i></span></p>
+<p>[3] <span class="external-link"><a href="https://github.com/1648027181/image_classification_pytorch_app" target="_blank" rel="noopener">图像分类</a><i class="fa fa-external-link"></i></span></p>
+<script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script></div><footer class="post-footer"><div class="post-copyright"><div class="post-copyright-author"><span class="post-copyright-author-name">本文作者: </span><span class="post-copyright-author-value"><a href="https://lvshaomei.github.io">LSM</a></span></div><div class="post-copyright-link"><span class="post-copyright-link-name">本文链接: </span><span class="post-copyright-link-value"><a href="https://lvshaomei.github.io/2023/10/24/%E5%A4%9A%E5%8A%9F%E8%83%BDstreamlit-App/">https://lvshaomei.github.io/2023/10/24/%E5%A4%9A%E5%8A%9F%E8%83%BDstreamlit-App/</a></span></div><div class="post-copyright-notice"><span class="post-copyright-notice-name">版权声明: </span><span class="post-copyright-notice-value">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-cn" rel="external nofollow" target="_blank">BY-NC-SA</a> 许可协议。转载请注明出处！</span></div></div><nav class="paginator"><div class="paginator-post"><div class="paginator-post-next"><a class="paginator-post-next__a" href="../%E3%80%90%E7%AC%AC%E4%B8%80%E6%9C%9FAI%E5%A4%8F%E4%BB%A4%E8%90%A5%E4%B8%A8%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E3%80%91%E4%BD%BF%E7%94%A8BERT%E6%A8%A1%E5%9E%8B%E8%A7%A3%E5%86%B3%E9%97%AE%E9%A2%98/"><span>【第一期AI夏令营丨自然语言处理】使用BERT模型解决问题</span><i class="fa fa-chevron-right"></i></a></div></div></nav></footer></div></div><div class="comments" id="comments"><div id="gitalk-container"></div></div></div><aside class="sidebar" id="sidebar"><div class="sidebar-inner"><div class="sidebar-nav"><span class="sidebar-nav-toc current">文章目录</span><span class="sidebar-nav-ov">站点概览</span></div><section class="sidebar-toc"><div><ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#深度学习模型部署实现图片检测、视频检测、人脸识别（判断是否是同一个人）、图片分类。"><span class="toc-number">1.</span> <span class="toc-text">深度学习模型部署实现图片检测、视频检测、人脸识别（判断是否是同一个人）、图片分类。</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#demo演示"><span class="toc-number"></span> <span class="toc-text">demo演示</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#安装依赖"><span class="toc-number"></span> <span class="toc-text">安装依赖</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#运行项目"><span class="toc-number"></span> <span class="toc-text">运行项目</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#功能介绍"><span class="toc-number"></span> <span class="toc-text">功能介绍</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#a-图片检测"><span class="toc-number"></span> <span class="toc-text">a. 图片检测</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#b-视频检测"><span class="toc-number"></span> <span class="toc-text">b. 视频检测</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#c-人脸识别"><span class="toc-number"></span> <span class="toc-text">c. 人脸识别</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-训练模型数据集"><span class="toc-number"></span> <span class="toc-text">1. 训练模型数据集</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-数据处理"><span class="toc-number"></span> <span class="toc-text">2. 数据处理</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#2-1-数据预处理"><span class="toc-number">1.</span> <span class="toc-text">2.1 数据预处理</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-2-MTCNN模型原理"><span class="toc-number">2.</span> <span class="toc-text">2.2 MTCNN模型原理</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-模型处理"><span class="toc-number"></span> <span class="toc-text">3. 模型处理</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#3-1-模型训练"><span class="toc-number">1.</span> <span class="toc-text">3.1 模型训练</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#数据增强：从数据集随机选择两张图片，对其进行添加椒盐噪声，水平翻转、高斯噪声、平移缩放旋转，其中数据增强是随机的。"><span class="toc-number">2.</span> <span class="toc-text">数据增强：从数据集随机选择两张图片，对其进行添加椒盐噪声，水平翻转、高斯噪声、平移缩放旋转，其中数据增强是随机的。</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#训练参数设置"><span class="toc-number">3.</span> <span class="toc-text">训练参数设置</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-2-模型预测"><span class="toc-number">4.</span> <span class="toc-text">3. 2 模型预测</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-3-模型原理"><span class="toc-number">5.</span> <span class="toc-text">3.3 模型原理</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#d-图片分类"><span class="toc-number"></span> <span class="toc-text">d. 图片分类</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#参考链接"><span class="toc-number"></span> <span class="toc-text">参考链接</span></a></div></section><!-- ov = overview --><section class="sidebar-ov hide"><div class="sidebar-ov-author"><div class="sidebar-ov-author__avatar"><img class="sidebar-ov-author__avatar_img" src="/images/banner/labia.jpeg" alt="avatar"></div><p class="sidebar-ov-author__p">The Harder You Work, The Luckier You Will Be.</p></div><div class="sidebar-ov-social"><a class="sidebar-ov-social__item" href="https://github.com/Lvshaomei/Lvshaomei.github.io" target="_blank" rel="noopener" data-popover="Github" data-popover-pos="up"><i class="sidebar-ov-social__item--icon fa fa-github"></i></a><a class="sidebar-ov-social__item" href="https://segmentfault.com/u/lvlv_5e182fd7c6adc" target="_blank" rel="noopener" data-popover="思否" data-popover-pos="up"><span class="sidebar-ov-social__item--logo">sf</span></a><a class="sidebar-ov-social__item" href="https://www.zhihu.com/people/fa-liang-jian-shao/activities" target="_blank" rel="noopener" data-popover="知乎" data-popover-pos="up"><span class="sidebar-ov-social__item--logo">�</span></a><a class="sidebar-ov-social__item" href="https://juejin.im/user/5da86e3d5188257948602ace" target="_blank" rel="noopener" data-popover="social.juejin" data-popover-pos="up"><span class="sidebar-ov-social__item--logo">�</span></a></div><div class="sidebar-ov-feed"><span class="sidebar-ov-feed-rss"><a class="sidebar-ov-feed-rss__a" href="../../../../atom.xml" target="_blank" rel="noopener"><i class="sidebar-ov-feed-rss__a--icon fa fa-rss"></i><span>RSS </span><span>订阅</span></a></span></div><div class="sidebar-ov-state"></div><div class="sidebar-ov-cc"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-cn" target="_blank" rel="noopener" data-popover="知识共享" data-popover-pos="up"><img src="../../../../images/cc-by-nc-sa.svg" alt="知识共享"></a></div></section><div class="sidebar-reading"><div class="sidebar-reading-info"><span>你已阅读了 </span><span class="sidebar-reading-info-num">0</span></div><div class="sidebar-reading-line"></div></div></div></aside><div class="clearfix"></div></div></main><footer class="footer" id="footer"><div class="footer-inner"><div><span>&copy; 2023</span><span class="fa fa-heart footer-icon"></span><span>LSM.</span></div><div><span>由 <a href="http://hexo.io/" title="hexo" target="_blank" rel="noopener">hexo</a> 强力驱动</span><span> v4.0.0.</span><span class="separator">|</span><span>主题 - <a href="https://github.com/liuyib/hexo-theme-stun/" title="stun" target="_blank" rel="noopener">stun</a></span><span> v1.5.4.</span></div><div class="busuanzi"><span class="busuanzi-site_uv"><i class="fa fa-user"></i><span>访问人数 </span><span id="busuanzi_value_site_uv"></span></span><span class="separator">|</span><span class="busuanzi-site_pv"><i class="fa fa-eye"></i><span>浏览总量 </span><span id="busuanzi_value_site_pv"></span></span><script src="https://cdn.jsdelivr.net/gh/sukkaw/busuanzi@latest/bsz.pure.mini.js" async></script></div></div></footer><div class="loading-bar" id="loading-bar"><div class="progress"></div></div><div class="back2top" id="back2top"><i class="back2top-icon fa fa-rocket"></i></div></div><div class="search-mask"></div><div class="search-popup"><span class="search-close"></span><div class="search-input"><input placeholder="搜索文章（支持多关键词，请用空格分隔）"></div><div class="search-results"></div></div><script src="https://cdn.jsdelivr.net/npm/jquery@v3.4.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.ui.min.js"></script><script src="https://cdn.jsdelivr.net/npm/ribbon.js@latest/dist/ribbon.min.js" size="120" alpha="0.6" zIndex="-1"></script><script src="https://cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-nest@latest/canvas-nest.min.js" color="243,81,151" opacity="0.5" count="100" zIndex="-2"></script><script>window.addEventListener('DOMContentLoaded', function () {
+  $('.header-nav-search').on('click', function (e) {
+    e.stopPropagation();
+
+    $('body').css('overflow', 'hidden');
+    $('.search-popup')
+      .addClass('show')
+      .velocity('stop')
+      .velocity('transition.expandIn', {
+        duration: 300,
+        complete: function () {
+          $('.search-popup input').focus();
+        }
+      });
+    $('.search-mask')
+      .velocity('stop')
+      .velocity('transition.fadeIn', {
+        duration: 300
+      });
+
+    initSearch();
+  });
+
+  $('.search-mask, .search-close').on('click', function () {
+    closeSearch();
+  });
+
+  $(document).on('keydown', function (e) {
+    // Escape <=> 27
+    if (e.keyCode === Stun.utils.codeToKeyCode('Escape')) {
+      closeSearch();
+    }
+  });
+
+  var isXML = true;
+  var search_path = 'search.xml';
+
+  if (!search_path) {
+    search_path = 'search.xml';
+  } else if (/json$/i.test(search_path)) {
+    isXML = false;
+  }
+
+  var path = '/' + search_path;
+
+  function initSearch() {
+    $.ajax({
+      url: path,
+      dataType: isXML ? 'xml' : 'json',
+      async: true,
+      success: function (res) {
+        var datas = isXML ? $('entry', res).map(function () {
+          // 将 XML 转为 JSON
+          return {
+            title: $('title', this).text(),
+            content: $('content', this).text(),
+            url: $('url', this).text()
+          };
+        }).get() : res;
+
+        var $input = $('.search-input input');
+        var $result = $('.search-results');
+
+        // 搜索对象（标题、内容）的权重，影响显示顺序
+        var WEIGHT = { title: 100, content: 1 };
+
+        var searchPost = function () {
+          var searchText = $input.val().toLowerCase().trim();
+          // 根据空白字符分隔关键字
+          var keywords = searchText.split(/[\s]+/);
+          // 搜索结果
+          var matchPosts = [];
+
+          // 有多个关键字时，将原文字整个保存下来
+          if (keywords.length > 1) {
+            keywords.push(searchText);
+          }
+
+          // 防止未输入字符时搜索
+          if (searchText.length > 0) {
+            datas.forEach(function (data) {
+              var isMatch  = false;
+
+              // 没有标题的文章使用预设的 i18n 变量代替
+              var title = (data.title && data.title.trim()) || '( 文章无标题 )';
+              var titleLower = title && title.toLowerCase();
+              // 删除 HTML 标签 和 所有空白字符
+              var content = data.content && data.content.replace(/<[^>]+>/g, '');
+              var contentLower = content && content.toLowerCase();
+              // 删除重复的 /
+              var postURL = data.url && decodeURI(data.url).replace(/\/{2,}/g, '/');
+
+              // 标题中匹配到的关键词
+              var titleHitSlice = [];
+              // 内容中匹配到的关键词
+              var contentHitSlice = [];
+
+              keywords.forEach(function (keyword) {
+                /**
+                  * 获取匹配的关键词的索引
+                  * @param {String} keyword 要匹配的关键字
+                  * @param {String} text 原文字
+                  * @param {Boolean} caseSensitive 是否区分大小写
+                  * @param {Number} weight 匹配对象的权重。权重大的优先显示
+                  * @return {Array}
+                  */
+                function getIndexByword (word, text, caseSensitive, weight) {
+                  if (!word || !text) return [];
+
+                  var startIndex = 0; // 每次匹配的开始索引
+                  var index = -1;     // 匹配到的索引值
+                  var result = [];    // 匹配结果
+
+                  if (!caseSensitive) {
+                    word = word.toLowerCase();
+                    text = text.toLowerCase();
+                  }
+
+                  while((index = text.indexOf(word, startIndex)) !== -1) {
+                    var hasMatch = false;
+
+                    // 索引位置相同的关键词，保留长度较长的
+                    titleHitSlice.forEach(function (hit) {
+                      if (hit.index === index && hit.word.length < word.length) {
+                        hit.word = word;
+                        hasMatch = true;
+                      }
+                    });
+                    startIndex = index + word.length;
+                    !hasMatch && result.push({ index: index, word: word, weight: weight });
+                  }
+
+                  return result;
+                }
+
+                titleHitSlice = titleHitSlice.concat(getIndexByword(keyword, titleLower, false, WEIGHT.title));
+                contentHitSlice = contentHitSlice.concat(getIndexByword(keyword, contentLower, false, WEIGHT.content));
+              });
+
+              var hitTitle = titleHitSlice.length;
+              var hitContent = contentHitSlice.length;
+
+              if (hitTitle > 0 || hitContent > 0) {
+                isMatch = true;
+              }
+
+              if (isMatch) {
+                ;[titleHitSlice, contentHitSlice].forEach(function (hit) {
+                  // 按照匹配文字的索引的递增顺序排序
+                  hit.sort(function (left, right) {
+                    return left.index - right.index;
+                  });
+                });
+
+                /**
+                  * 给文本中匹配到的关键词添加标记，从而进行高亮显示
+                  * @param {String} text 原文本
+                  * @param {Array} hitSlice 匹配项的索引信息
+                  * @param {Number} start 开始索引
+                  * @param {Number} end 结束索引
+                  * @return {String}
+                  */
+                function highlightKeyword (text, hitSlice, start, end) {
+                  if (!text || !hitSlice || !hitSlice.length) return;
+
+                  var result = '';
+                  var startIndex = start;
+                  var endIndex = end;
+
+                  hitSlice.forEach(function (hit) {
+                    if (hit.index < startIndex) return;
+
+                    var hitWordEnd = hit.index + hit.word.length;
+
+                    result += text.slice(startIndex, hit.index);
+                    result += '<b>' + text.slice(hit.index, hitWordEnd) + '</b>';
+                    startIndex = hitWordEnd;
+                  });
+                  result += text.slice(startIndex, endIndex);
+
+                  return result;
+                }
+
+                var postData = {};
+                // 文章总的搜索权重
+                var postWeight = titleHitSlice.length * WEIGHT.title + contentHitSlice.length * WEIGHT.content;
+                // 标记匹配关键词后的标题
+                var postTitle = highlightKeyword(title, titleHitSlice, 0, title.length) || title;
+                // 标记匹配关键词后的内容
+                var postContent;
+                // 显示内容的长度
+                var SHOW_WORD_LENGTH = 200;
+                // 命中关键词前的字符显示长度
+                var SHOW_WORD_FRONT_LENGTH = 20;
+                var SHOW_WORD_END_LENGTH = SHOW_WORD_LENGTH - SHOW_WORD_FRONT_LENGTH;
+
+                // 截取匹配的第一个字符，前后共 200 个字符来显示
+                if (contentHitSlice.length > 0) {
+                  var firstIndex = contentHitSlice[0].index;
+                  var start = firstIndex > SHOW_WORD_FRONT_LENGTH ? firstIndex - SHOW_WORD_FRONT_LENGTH : 0;
+                  var end = firstIndex + SHOW_WORD_END_LENGTH;
+
+                  postContent = highlightKeyword(content, contentHitSlice, start, end);
+                } else { // 未匹配到内容，直接截取前 200 个字符来显示
+                  postContent = content.slice(0, SHOW_WORD_LENGTH);
+                }
+
+                postData.title = postTitle;
+                postData.content = postContent;
+                postData.url = postURL;
+                postData.weight = postWeight;
+                matchPosts.push(postData);
+              }
+            });
+          }
+
+          var resultInnerHtml = '';
+
+          if (matchPosts.length) {
+            // 按权重递增的顺序排序，使权重大的优先显示
+            matchPosts.sort(function (left, right) {
+              return right.weight - left.weight;
+            });
+
+            resultInnerHtml += '<ul>';
+            matchPosts.forEach(function (post) {
+              resultInnerHtml += '<li><a class="search-results-title" href="' + post.url + '">';
+              resultInnerHtml += post.title;
+              resultInnerHtml += '</a><div class="search-results-content">';
+              resultInnerHtml += post.content;
+              resultInnerHtml += '</div></li>';
+            });
+            resultInnerHtml += '</ul>';
+          } else {
+            resultInnerHtml += '<div class="search-results-none"><i class="fa fa-meh-o"></i></div>';
+          }
+
+          $result.html(resultInnerHtml);
+        };
+
+        $input.on('input', searchPost);
+        $input.on('keypress', function (e) {
+          if (e.keyCode === Stun.utils.codeToKeyCode('Enter')) {
+            searchPost();
+          }
+        });
+      }
+    });
+  }
+
+  function closeSearch () {
+    $('body').css('overflow', 'auto');
+    $('.search-popup')
+      .removeClass('show')
+      .velocity('stop')
+      .velocity('transition.expandOut', {
+        duration: 300
+      });
+    $('.search-mask')
+      .velocity('stop')
+      .velocity('transition.fadeOut', {
+        duration: 300
+      });
+  }
+}, false);</script><script src="https://cdn.jsdelivr.net/gh/sukkaw/busuanzi@latest/bsz.pure.mini.js" async></script><script src="https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.js"></script><script src="https://cdn.jsdelivr.net/npm/js-md5@latest/src/md5.min.js"></script><script>function loadGitalk () {
+  if (!document.getElementById('gitalk-container')) {
+    return;
+  }
+
+  var gitalk = new Gitalk({
+    id: md5(window.location.pathname.slice(1)),
+    clientID: '23d7b4a6c1b1589b9d9b',
+    clientSecret: 'fcbbb62bf5fe3fac81979e69fd71cd637e0c523f',
+    repo: 'Lvshaomei.github.io',
+    owner: 'Lvshaomei',
+    admin: ['Lvshaomei'],
+    distractionFreeMode: 'true',
+    language: 'zh-CN'
+  });
+
+  gitalk.render('gitalk-container');
+}
+
+if (false) {
+  loadGitalk();
+} else {
+  window.addEventListener('DOMContentLoaded', loadGitalk, false);
+}</script><script src="../../../../js/utils.js?v=1.5.4"></script><script src="../../../../js/stun-boot.js?v=1.5.4"></script><script src="../../../../js/scroll.js?v=1.5.4"></script><script src="../../../../js/header.js?v=1.5.4"></script><script src="../../../../js/sidebar.js?v=1.5.4"></script></body></html>

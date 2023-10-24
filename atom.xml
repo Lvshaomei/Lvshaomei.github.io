@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://lvshaomei.github.io/"/>
-  <updated>2022-01-05T03:02:58.661Z</updated>
+  <updated>2023-10-24T04:24:19.216Z</updated>
   <id>https://lvshaomei.github.io/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>用PS将图片中的英文变成中文</title>
-    <link href="https://lvshaomei.github.io/2022/01/05/%E7%94%A8PS%E5%B0%86%E5%9B%BE%E7%89%87%E4%B8%AD%E7%9A%84%E8%8B%B1%E6%96%87%E5%8F%98%E6%88%90%E4%B8%AD%E6%96%87/"/>
-    <id>https://lvshaomei.github.io/2022/01/05/%E7%94%A8PS%E5%B0%86%E5%9B%BE%E7%89%87%E4%B8%AD%E7%9A%84%E8%8B%B1%E6%96%87%E5%8F%98%E6%88%90%E4%B8%AD%E6%96%87/</id>
-    <published>2022-01-05T02:35:46.000Z</published>
-    <updated>2022-01-05T03:02:58.661Z</updated>
+    <title>多功能streamlit_App</title>
+    <link href="https://lvshaomei.github.io/2023/10/24/%E5%A4%9A%E5%8A%9F%E8%83%BDstreamlit-App/"/>
+    <id>https://lvshaomei.github.io/2023/10/24/%E5%A4%9A%E5%8A%9F%E8%83%BDstreamlit-App/</id>
+    <published>2023-10-24T04:20:51.000Z</published>
+    <updated>2023-10-24T04:24:19.216Z</updated>
     
     <summary type="html">
     
@@ -29,7 +29,244 @@
       
         
         
-          &lt;h2 id=&quot;用PS将图片中的英文变成中文&quot;&gt;&lt;span class=&quot;heading-link&quot;&gt;用PS将图片中的英文变成中文&lt;/span&gt;&lt;/h2&gt;&lt;h4
+          &lt;p&gt;﻿# ✨多功能streamlit_App&lt;/p&gt;
+&lt;h4 id=&quot;深度学习模型部署实现图片检测、视频检测、人脸识别（判断是否是同一个人）、图片分类。&quot;&gt;&lt;span
+        
+      
+    
+    </summary>
+    
+    
+      <category term="深度学习部署" scheme="https://lvshaomei.github.io/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E9%83%A8%E7%BD%B2/"/>
+    
+    
+      <category term="CV" scheme="https://lvshaomei.github.io/tags/CV/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【第一期AI夏令营丨自然语言处理】使用BERT模型解决问题</title>
+    <link href="https://lvshaomei.github.io/2023/10/24/%E3%80%90%E7%AC%AC%E4%B8%80%E6%9C%9FAI%E5%A4%8F%E4%BB%A4%E8%90%A5%E4%B8%A8%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E3%80%91%E4%BD%BF%E7%94%A8BERT%E6%A8%A1%E5%9E%8B%E8%A7%A3%E5%86%B3%E9%97%AE%E9%A2%98/"/>
+    <id>https://lvshaomei.github.io/2023/10/24/%E3%80%90%E7%AC%AC%E4%B8%80%E6%9C%9FAI%E5%A4%8F%E4%BB%A4%E8%90%A5%E4%B8%A8%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E3%80%91%E4%BD%BF%E7%94%A8BERT%E6%A8%A1%E5%9E%8B%E8%A7%A3%E5%86%B3%E9%97%AE%E9%A2%98/</id>
+    <published>2023-10-24T04:20:33.000Z</published>
+    <updated>2023-10-24T04:22:43.310Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;﻿# 一、使用预训练的BERT模型解决文本二分类问题&lt;/p&gt;
+&lt;h2 id=&quot;深度学习模型训练的一般步骤：&quot;&gt;&lt;span
+        
+      
+    
+    </summary>
+    
+    
+      <category term="【第一期AI夏令营丨自然语言处理】" scheme="https://lvshaomei.github.io/categories/%E3%80%90%E7%AC%AC%E4%B8%80%E6%9C%9FAI%E5%A4%8F%E4%BB%A4%E8%90%A5%E4%B8%A8%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E3%80%91/"/>
+    
+    
+      <category term="NLP" scheme="https://lvshaomei.github.io/tags/NLP/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【第一期AI夏令营丨自然语言处理】任务一：文本二分类_&amp;&amp;Baseline代码分析及改进</title>
+    <link href="https://lvshaomei.github.io/2023/10/24/%E3%80%90%E7%AC%AC%E4%B8%80%E6%9C%9FAI%E5%A4%8F%E4%BB%A4%E8%90%A5%E4%B8%A8%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E3%80%91%E4%BB%BB%E5%8A%A1%E4%B8%80%EF%BC%9A%E6%96%87%E6%9C%AC%E4%BA%8C%E5%88%86%E7%B1%BB-Baseline%E4%BB%A3%E7%A0%81%E5%88%86%E6%9E%90%E5%8F%8A%E6%94%B9%E8%BF%9B/"/>
+    <id>https://lvshaomei.github.io/2023/10/24/%E3%80%90%E7%AC%AC%E4%B8%80%E6%9C%9FAI%E5%A4%8F%E4%BB%A4%E8%90%A5%E4%B8%A8%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E3%80%91%E4%BB%BB%E5%8A%A1%E4%B8%80%EF%BC%9A%E6%96%87%E6%9C%AC%E4%BA%8C%E5%88%86%E7%B1%BB-Baseline%E4%BB%A3%E7%A0%81%E5%88%86%E6%9E%90%E5%8F%8A%E6%94%B9%E8%BF%9B/</id>
+    <published>2023-10-24T04:20:16.000Z</published>
+    <updated>2023-10-24T04:23:13.148Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;﻿&lt;a name=&quot;tZJcy&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;一、问题分析&quot;&gt;&lt;span
+        
+      
+    
+    </summary>
+    
+    
+      <category term="【第一期AI夏令营丨自然语言处理】" scheme="https://lvshaomei.github.io/categories/%E3%80%90%E7%AC%AC%E4%B8%80%E6%9C%9FAI%E5%A4%8F%E4%BB%A4%E8%90%A5%E4%B8%A8%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E3%80%91/"/>
+    
+    
+      <category term="NLP" scheme="https://lvshaomei.github.io/tags/NLP/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【第一期AI夏令营丨自然语言处理】赛事信息</title>
+    <link href="https://lvshaomei.github.io/2023/10/24/%E3%80%90%E7%AC%AC%E4%B8%80%E6%9C%9FAI%E5%A4%8F%E4%BB%A4%E8%90%A5%E4%B8%A8%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E3%80%91%E8%B5%9B%E4%BA%8B%E4%BF%A1%E6%81%AF/"/>
+    <id>https://lvshaomei.github.io/2023/10/24/%E3%80%90%E7%AC%AC%E4%B8%80%E6%9C%9FAI%E5%A4%8F%E4%BB%A4%E8%90%A5%E4%B8%A8%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E3%80%91%E8%B5%9B%E4%BA%8B%E4%BF%A1%E6%81%AF/</id>
+    <published>2023-10-24T04:19:35.000Z</published>
+    <updated>2023-10-24T04:21:58.349Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;﻿### 基于论文摘要的文本分类与关键词抽取挑战赛  ：&lt;span class=&quot;external-link&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="【第一期AI夏令营丨自然语言处理】" scheme="https://lvshaomei.github.io/categories/%E3%80%90%E7%AC%AC%E4%B8%80%E6%9C%9FAI%E5%A4%8F%E4%BB%A4%E8%90%A5%E4%B8%A8%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E3%80%91/"/>
+    
+    
+      <category term="NLP" scheme="https://lvshaomei.github.io/tags/NLP/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>带你用油猴插件免费观看各大平台（B站、爱奇艺等）VIP视频</title>
+    <link href="https://lvshaomei.github.io/2023/10/24/%E5%B8%A6%E4%BD%A0%E7%94%A8%E6%B2%B9%E7%8C%B4%E6%8F%92%E4%BB%B6%E5%85%8D%E8%B4%B9%E8%A7%82%E7%9C%8B%E5%90%84%E5%A4%A7%E5%B9%B3%E5%8F%B0%EF%BC%88B%E7%AB%99%E3%80%81%E7%88%B1%E5%A5%87%E8%89%BA%E7%AD%89%EF%BC%89VIP%E8%A7%86%E9%A2%91/"/>
+    <id>https://lvshaomei.github.io/2023/10/24/%E5%B8%A6%E4%BD%A0%E7%94%A8%E6%B2%B9%E7%8C%B4%E6%8F%92%E4%BB%B6%E5%85%8D%E8%B4%B9%E8%A7%82%E7%9C%8B%E5%90%84%E5%A4%A7%E5%B9%B3%E5%8F%B0%EF%BC%88B%E7%AB%99%E3%80%81%E7%88%B1%E5%A5%87%E8%89%BA%E7%AD%89%EF%BC%89VIP%E8%A7%86%E9%A2%91/</id>
+    <published>2023-10-24T03:20:06.000Z</published>
+    <updated>2023-10-24T03:21:54.211Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;﻿## 前言&lt;/p&gt;
+&lt;p&gt;这里使用谷歌浏览器来操作示范，其他浏览器也是类似操作。很多朋友无法使用谷歌商店，这里提供两个好用方便的网站下载插件：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;span class=&quot;external-link&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="小技巧" scheme="https://lvshaomei.github.io/categories/%E5%B0%8F%E6%8A%80%E5%B7%A7/"/>
+    
+    
+      <category term="资源" scheme="https://lvshaomei.github.io/tags/%E8%B5%84%E6%BA%90/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>3 线性神经网络</title>
+    <link href="https://lvshaomei.github.io/2023/03/23/3%20%E7%BA%BF%E6%80%A7%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/"/>
+    <id>https://lvshaomei.github.io/2023/03/23/3%20%E7%BA%BF%E6%80%A7%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/</id>
+    <published>2023-03-23T12:58:25.352Z</published>
+    <updated>2023-03-23T12:58:29.192Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;3-1-线性回归&quot;&gt;&lt;span class=&quot;heading-link&quot;&gt;3.1 线性回归&lt;/span&gt;&lt;/h1&gt;&lt;h2 id=&quot;小结&quot;&gt;&lt;span
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>第十章 期中大作业</title>
+    <link href="https://lvshaomei.github.io/2023/03/07/%E7%AC%AC%E5%8D%81%E7%AB%A0%20%E6%9C%9F%E4%B8%AD%E5%A4%A7%E4%BD%9C%E4%B8%9A/"/>
+    <id>https://lvshaomei.github.io/2023/03/07/%E7%AC%AC%E5%8D%81%E7%AB%A0%20%E6%9C%9F%E4%B8%AD%E5%A4%A7%E4%BD%9C%E4%B8%9A/</id>
+    <published>2023-03-07T14:05:36.701Z</published>
+    <updated>2023-03-07T14:05:36.940Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;10-1-面试题&quot;&gt;&lt;span class=&quot;heading-link&quot;&gt;10. 1 面试题&lt;/span&gt;&lt;/h2&gt;&lt;h3 id=&quot;10-1-1-hive外部表和内部表的区别&quot;&gt;&lt;span class=&quot;heading-link&quot;&gt;10.1.1
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>第六章 期中大作业</title>
+    <link href="https://lvshaomei.github.io/2023/02/26/%E7%AC%AC%E5%85%AD%E7%AB%A0%20%E6%9C%9F%E4%B8%AD%E5%A4%A7%E4%BD%9C%E4%B8%9A/"/>
+    <id>https://lvshaomei.github.io/2023/02/26/%E7%AC%AC%E5%85%AD%E7%AB%A0%20%E6%9C%9F%E4%B8%AD%E5%A4%A7%E4%BD%9C%E4%B8%9A/</id>
+    <published>2023-02-26T14:00:13.589Z</published>
+    <updated>2023-02-26T14:01:14.181Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;6-1-面试题&quot;&gt;&lt;span class=&quot;heading-link&quot;&gt;6. 1 面试题&lt;/span&gt;&lt;/h1&gt;&lt;h2 id=&quot;6-1-1-简述Hadoop小文件弊端&quot;&gt;&lt;span class=&quot;heading-link&quot;&gt;6.1.1
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>回首2022，迎接2023</title>
+    <link href="https://lvshaomei.github.io/2023/01/01/%E5%9B%9E%E9%A6%962022%EF%BC%8C%E8%BF%8E%E6%8E%A52023/"/>
+    <id>https://lvshaomei.github.io/2023/01/01/%E5%9B%9E%E9%A6%962022%EF%BC%8C%E8%BF%8E%E6%8E%A52023/</id>
+    <published>2023-01-01T15:09:51.000Z</published>
+    <updated>2023-01-01T15:54:34.082Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;span class=&quot;external-link&quot;&gt;&lt;a href=&quot;https://imgse.com/i/pSCzAts&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;img
+        
+      
+    
+    </summary>
+    
+    
+      <category term="自我总结" scheme="https://lvshaomei.github.io/categories/%E8%87%AA%E6%88%91%E6%80%BB%E7%BB%93/"/>
+    
+    
+      <category term="随笔" scheme="https://lvshaomei.github.io/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>用PS将图片中的英文变成中文</title>
+    <link href="https://lvshaomei.github.io/2022/01/05/%E7%94%A8PS%E5%B0%86%E5%9B%BE%E7%89%87%E4%B8%AD%E7%9A%84%E8%8B%B1%E6%96%87%E5%8F%98%E6%88%90%E4%B8%AD%E6%96%87/"/>
+    <id>https://lvshaomei.github.io/2022/01/05/%E7%94%A8PS%E5%B0%86%E5%9B%BE%E7%89%87%E4%B8%AD%E7%9A%84%E8%8B%B1%E6%96%87%E5%8F%98%E6%88%90%E4%B8%AD%E6%96%87/</id>
+    <published>2022-01-05T02:35:46.000Z</published>
+    <updated>2022-01-05T03:42:40.320Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;用PS将图片中的英文变成中文&quot;&gt;&lt;span
         
       
     
@@ -296,30 +533,6 @@
     
     
       <category term="github" scheme="https://lvshaomei.github.io/tags/github/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>笔记记录-浮动</title>
-    <link href="https://lvshaomei.github.io/2019/11/18/%E7%AC%94%E8%AE%B0%E8%AE%B0%E5%BD%95-%E6%B5%AE%E5%8A%A8/"/>
-    <id>https://lvshaomei.github.io/2019/11/18/%E7%AC%94%E8%AE%B0%E8%AE%B0%E5%BD%95-%E6%B5%AE%E5%8A%A8/</id>
-    <published>2019-11-18T07:54:26.000Z</published>
-    <updated>2020-02-04T02:57:52.032Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h3 id=&quot;定义&quot;&gt;&lt;span class=&quot;heading-link&quot;&gt;定义&lt;/span&gt;&lt;/h3&gt;&lt;p&gt; 浮动:通常无法左右排列，则设置了浮动的元素会往左或者右移动，直到遇到另一个元素或者外边距&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;div class=&quot;table-container&quot;&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;float:left/right;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;&lt;/figure&gt;
-
-&lt;h6 id=&quot;高度塌陷问题&quot;&gt;&lt;span class=&quot;heading-link&quot;&gt;高度塌陷问题&lt;/span&gt;&lt;/h6&gt;&lt;p&gt;子元素书写浮动属性后，父元素会产生高度塌陷的问题，也就是福原属高度为0的现象。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="CSS相关问题解决方法" scheme="https://lvshaomei.github.io/categories/CSS%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/"/>
-    
-    
-      <category term="css" scheme="https://lvshaomei.github.io/tags/css/"/>
     
   </entry>
   
