@@ -1,0 +1,10 @@
+<hr>
+<p>title: 【第一期AI夏令营丨自然语言处理】赛事信息<br>date: 2023-10-24 12:19:35<br>tags: NLP<br>categories: 【第一期AI夏令营丨自然语言处理】</p>
+<hr>
+<p>﻿### 基于论文摘要的文本分类与关键词抽取挑战赛  ：<a href="https://challenge.xfyun.cn/topic/info?type=abstract-of-the-paper&ch=ZuoaKcY" target="_blank" rel="noopener">https://challenge.xfyun.cn/topic/info?type=abstract-of-the-paper&amp;ch=ZuoaKcY</a></p>
+<p><img src="./1.png" alt=""></p>
+<h1 id="赛题解析"><a href="#赛题解析" class="headerlink" title="赛题解析"></a>赛题解析</h1><p>本任务分为两个子任务：<br /><strong>1. 从论文标题、摘要作者等信息，判断该论文是否属于医学领域的文献。</strong><br /><strong>2. 从论文标题、摘要作者等信息，提取出该论文关键词。</strong></p>
+<p><strong>第一个任务</strong>看作是一个<strong>文本二分类任务。</strong>机器需要根据对论文摘要等信息的理解，将论文划分为医学领域的文献和非医学领域的文献两个类别之一<strong>。第二个任务</strong>看作是一个<strong>文本关键词识别任务</strong>。机器需要从给定的论文中识别和提取出与论文内容相关的关键词。<br />*<em>train.csv *</em>部分信息如下图：<br /><img src="./2.png" alt="image.png"></p>
+<p>*<em>test.csv *</em>部分信息如下图：<br /><img src="./3.png" alt="image.png"></p>
+<h2 id="数据集解析"><a href="#数据集解析" class="headerlink" title="数据集解析"></a>数据集解析</h2><p><br />训练集与测试集数据为CSV格式文件，各字段分别是标题、作者和摘要。Keywords为任务2的标签，label为任务1的标签。训练集和测试集都可以通过pandas读取。</p>
+<h2 id="【参考】"><a href="#【参考】" class="headerlink" title="【参考】"></a>【参考】</h2><p><a href="https://aistudio.baidu.com/aistudio/projectdetail/6522950?sUid=377372&shared=1&ts=1689827255213" target="_blank" rel="noopener">手把手打一场NLP赛事</a></p>
