@@ -49,12 +49,12 @@ window.CONFIG = CONFIG;</script></head><body><div class="container" id="containe
 <p><code>streamlit run login.py</code></p>
 <p>[外链图片转存失败,源站可能有防盗链机制,建议将图片保存下来直接上传(img-GcD8ZTaY-1691047154847)(./Page_data/users.png)]</p>
 <p>根据用户名和密码登录，然后进入主页面。</p>
-<p><img src="https://img-blog.csdnimg.cn/5622d08e480f4ef08d4d9833b89ce890.png#pic_center" alt="在这里插入图片描述"></p>
-<p><img src="https://img-blog.csdnimg.cn/34dce2f01724488ca08098921401fac7.png#pic_center" alt="在这里插入图片描述"></p>
-<p><img src="https://img-blog.csdnimg.cn/db366e868b984d28a4b1e9451679e833.png#pic_center" alt="在这里插入图片描述"></p>
-<h1 id="功能介绍"><span class="heading-link">功能介绍</span></h1><h2 id="a-图片检测"><span class="heading-link">a. 图片检测</span></h2><p><img src="https://img-blog.csdnimg.cn/29633413150346a7a0db7ad1148344c3.png#pic_center" alt="在这里插入图片描述"></p>
-<h2 id="b-视频检测"><span class="heading-link">b. 视频检测</span></h2><p><img src="https://img-blog.csdnimg.cn/7285107c49234feea310ee7c1834cec8.png#pic_center" alt="在这里插入图片描述"></p>
-<h2 id="c-人脸识别"><span class="heading-link">c. 人脸识别</span></h2><p>由于人脸识别功能是自己写自己训练得到的，所以下面将对代码进行详细介绍。<br><img src="https://img-blog.csdnimg.cn/76f0c5e7fdee436a8ee2666d5ae99102.png#pic_center" alt="在这里插入图片描述"></p>
+<p><img src="/2023/10/24/%E5%A4%9A%E5%8A%9F%E8%83%BDstreamlit-App/1.png" alt="在这里插入图片描述"></p>
+<p><img src="/2023/10/24/%E5%A4%9A%E5%8A%9F%E8%83%BDstreamlit-App/34dce2f01724488ca08098921401fac7.png" alt="在这里插入图片描述"></p>
+<p><img src="/2023/10/24/%E5%A4%9A%E5%8A%9F%E8%83%BDstreamlit-App/db366e868b984d28a4b1e9451679e833.png" alt="在这里插入图片描述"></p>
+<h1 id="功能介绍"><span class="heading-link">功能介绍</span></h1><h2 id="a-图片检测"><span class="heading-link">a. 图片检测</span></h2><p><img src="/2023/10/24/%E5%A4%9A%E5%8A%9F%E8%83%BDstreamlit-App/29633413150346a7a0db7ad1148344c3.png" alt="在这里插入图片描述"></p>
+<h2 id="b-视频检测"><span class="heading-link">b. 视频检测</span></h2><p><img src="/2023/10/24/%E5%A4%9A%E5%8A%9F%E8%83%BDstreamlit-App/7285107c49234feea310ee7c1834cec8.png" alt="在这里插入图片描述"></p>
+<h2 id="c-人脸识别"><span class="heading-link">c. 人脸识别</span></h2><p>由于人脸识别功能是自己写自己训练得到的，所以下面将对代码进行详细介绍。<br><img src="/2023/10/24/%E5%A4%9A%E5%8A%9F%E8%83%BDstreamlit-App/76f0c5e7fdee436a8ee2666d5ae99102.png" alt="在这里插入图片描述"></p>
 <h3 id="1-训练模型数据集"><span class="heading-link">1. 训练模型数据集</span></h3><figure class="highlight plain"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">CeleA前500个数据集和CASIA数据集</span><br></pre></td></tr></tbody></table></div></figure>
 
 <h3 id="2-数据处理"><span class="heading-link">2. 数据处理</span></h3><p><strong>说明</strong>：由于<code>CeleA</code>和<code>CASIA</code>数据集不是单纯的人脸，所以用<code>MTCNN</code>模型提取人脸，然后保存到文件夹中。</p>
@@ -71,7 +71,7 @@ window.CONFIG = CONFIG;</script></head><body><div class="container" id="containe
 
 <p><strong>经过以上两步的处理，我们得到预处理后的<code>CASIA</code>数据集和<code>CELEA</code>数据集。于是将两个数据集合并到同一个文件夹，其中包含1000个人的人脸图像，000-499来源于<code>CASIA</code>数据集，500-1000来源于<code>CeleA</code>数据集。</strong></p>
 <h4 id="2-2-MTCNN模型原理"><span class="heading-link">2.2 MTCNN模型原理</span></h4><p>第一阶段是使用一种叫做<code>PNet</code>(Proposal Network)的卷积神经网络，获得候选窗体和边界回归向量。同时，候选窗体根据边界框进行校准。然后利用非极大值抑制去除重叠窗体。第二阶段是使用<code>R-Net</code>(Refine Network)卷积神经网络进行操作，将经过<code>P-Net</code>确定的包含候选窗体的图片在<code>R-Net</code>中训练，最后使用全连接网络进行分类。利用边界框向量微调候选窗体，最后还是利用非极大值抑制算法去除重叠窗体。第三阶段，使用<code>Onet</code>(Output Network)卷积神经网络进行操作，该网络比<code>R-Net</code>多一层卷积层，功能与<code>R-Net</code>类似。网络结构图如下。</p>
-<p><img src="https://img-blog.csdnimg.cn/31529324a94c41a5b41726cfa07290c1.jpeg#pic_center" alt="在这里插入图片描述"></p>
+<p><img src="/2023/10/24/%E5%A4%9A%E5%8A%9F%E8%83%BDstreamlit-App/31529324a94c41a5b41726cfa07290c1.jpeg" alt="在这里插入图片描述"></p>
 <h3 id="3-模型处理"><span class="heading-link">3. 模型处理</span></h3><h4 id="3-1-模型训练"><span class="heading-link">3.1 模型训练</span></h4><figure class="highlight markdown"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">执行命令： python train.py trainSetDir modelPath</span><br><span class="line">说明：将trainSetDir改为训练集所在的路径，将modelPath改为模型保存的路径。</span><br></pre></td></tr></tbody></table></div></figure>
 
 <h4 id="数据增强：从数据集随机选择两张图片，对其进行添加椒盐噪声，水平翻转、高斯噪声、平移缩放旋转，其中数据增强是随机的。"><span class="heading-link">数据增强：从数据集随机选择两张图片，对其进行添加椒盐噪声，水平翻转、高斯噪声、平移缩放旋转，其中数据增强是随机的。</span></h4><figure class="highlight python"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">transform = transforms.Compose([transforms.Resize((<span class="number">256</span>, <span class="number">256</span>)),</span><br><span class="line">                                AddPepperNoise(<span class="number">0.9</span>,<span class="number">0.5</span>),</span><br><span class="line">                                transforms.ToTensor()])</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">albu_transfomem = A.Compose([A.HorizontalFlip(p = <span class="number">0.5</span>),</span><br><span class="line">                             A.OneOf([</span><br><span class="line">                                 A.IAAAdditiveGaussianNoise(),</span><br><span class="line">                                 A.GaussNoise(var_limit=(<span class="number">10</span>,<span class="number">80</span>))</span><br><span class="line">                             ],p=<span class="number">0.8</span>),</span><br><span class="line">                             A.ShiftScaleRotate(scale_limit = <span class="number">0.1</span>,rotate_limit=<span class="number">15</span>,p=<span class="number">0.6</span>)</span><br><span class="line">                             ],p=<span class="number">0.6</span>)</span><br></pre></td></tr></tbody></table></div></figure>
@@ -81,7 +81,7 @@ window.CONFIG = CONFIG;</script></head><body><div class="container" id="containe
 <h4 id="3-2-模型预测"><span class="heading-link">3. 2 模型预测</span></h4><figure class="highlight markdown"><div class="table-container"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">执行命令： python test.py testSetDir resultPath</span><br><span class="line">说明：将testSetDir改为测试集所在的路径，将resultPath改为结果保存的路径。</span><br></pre></td></tr></tbody></table></div></figure>
 
 <h4 id="3-3-模型原理"><span class="heading-link">3.3 模型原理</span></h4><p>通俗的来说<strong><code>SENet</code>的核心思想在于通过网络根据loss去学习特征权重，使得有效的feature map权重大，无效或效果小的feature map权重小的方式训练模型达到更好的结果</strong>。<code>SENet-154</code>的构建是将<code>SE</code>块合并到<code>64×4d ResNeXt-152</code>的修改版本中，该版本采用<code>ResNet-152</code>的块堆叠策略，扩展了原来的<code>ResNeXt-101</code>。<code>SE</code>结构图如下。</p>
-<p><img src="https://img-blog.csdnimg.cn/7f47dcc0a0a94f76ae384e8941359fdf.jpeg#pic_center" alt="在这里插入图片描述"></p>
+<p><img src="/2023/10/24/%E5%A4%9A%E5%8A%9F%E8%83%BDstreamlit-App/7f47dcc0a0a94f76ae384e8941359fdf.jpeg" alt="在这里插入图片描述"></p>
 <p><code>SENET-154</code>与<code>SE</code>存在的其他差异如下：</p>
 <ul>
 <li>将第一个7×7卷积层替换为3个连续的3 × 3卷积层</li>
@@ -89,7 +89,7 @@ window.CONFIG = CONFIG;</script></head><body><div class="container" id="containe
 <li>为了减少过拟合，在分类层之前插入一个<code>dropout layer (dropout ratio为0.2)</code>。</li>
 <li>在训练过程中使用了标签平滑正则化。</li>
 </ul>
-<h2 id="d-图片分类"><span class="heading-link">d. 图片分类</span></h2><p><img src="https://img-blog.csdnimg.cn/fd6d24f448684cb6982add980312880e.png#pic_center" alt="在这里插入图片描述"></p>
+<h2 id="d-图片分类"><span class="heading-link">d. 图片分类</span></h2><p><img src="/2023/10/24/%E5%A4%9A%E5%8A%9F%E8%83%BDstreamlit-App/fd6d24f448684cb6982add980312880e.png" alt="在这里插入图片描述"></p>
 <h1 id="参考链接"><span class="heading-link">参考链接</span></h1><p>[1] <span class="external-link"><a href="https://streamlit.io/" target="_blank" rel="noopener">streamlit</a><i class="fa fa-external-link"></i></span></p>
 <p>[2] <span class="external-link"><a href="https://github.com/xugaoxiang/yolov5-streamlit/tree/main" target="_blank" rel="noopener">YOLOv5 检测</a><i class="fa fa-external-link"></i></span></p>
 <p>[3] <span class="external-link"><a href="https://github.com/1648027181/image_classification_pytorch_app" target="_blank" rel="noopener">图像分类</a><i class="fa fa-external-link"></i></span></p>
